@@ -1,0 +1,17 @@
+2021-08-19 01:41:18.536 | INFO     | __main__:main:16 - dziala
+2021-08-19 01:41:18.537 | ERROR    | __main__:main:18 - An error has been caught in function 'main', process 'MainProcess' (47822), thread 'MainThread' (4487933440):
+Traceback (most recent call last):
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 21, in <module>
+    main()
+    └ <function main at 0x10371b0d0>
+
+> File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 18, in main
+    x.divide()
+    │ └ <function testowa.divide at 0x104194d30>
+    └ <__main__.testowa object at 0x10417bca0>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 10, in divide
+    return 2/0
+
+ZeroDivisionError: division by zero
