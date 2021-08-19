@@ -1,6 +1,7 @@
 import pytest
 
 from src.keygen import Keygen
+from src.aes import AES
 
 
 class Test_AES:
@@ -10,10 +11,33 @@ class Test_AES:
 
     @pytest.fixture
     def key(self):
-        return 1
+        return bytearray().fromhex(Keygen().get_key())
 
-    def test_dummy(self):
-        assert 1 == 1
+    @pytest.fixture
+    def aes(self):
+        return AES()
+
+    def test_if_ciphertext_differ_from_plain(self, plaintext, key, aes):
+        aes.setKey(key)
+        ciphertext = aes.encrypt(plaintext)
+        assert ciphertext != plaintext
+
+    def test_multiple_encryptions(self, plaintext, aes):
+        TESTS_AMOUNT = 10
+        ciphers_list = list()
+        for x in range(0, TESTS_AMOUNT):
+            key = bytearray().fromhex(Keygen().get_key())
+            aes.setKey(key)
+            ciphertext = aes.encrypt(plaintext)
+            assert ciphertext not in ciphers_list
+            ciphers_list.append(ciphertext) 
+
+    def test_decipher(self, plaintext, key, aes):
+        aes.setKey(key)
+        ciphertext = aes.encrypt(plaintext)
+        plaintext2 = aes.decrypt(ciphertext)
+        assert plaintext == plaintext2
+
 
 
 class Test_KeyGen:
@@ -28,7 +52,7 @@ class Test_KeyGen:
         assert isinstance(key, str)
 
     def test_multiple_keygen(self, keygen):
-        TESTS_AMOUNT = 100
+        TESTS_AMOUNT = 10
         key_list = list()
         for x in range(0, TESTS_AMOUNT):
             key = keygen.get_key()
