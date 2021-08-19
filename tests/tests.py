@@ -2,6 +2,31 @@ import pytest
 
 from src.keygen import Keygen
 from src.aes import AES
+from src.ocb import OCB
+
+class Test_OCB:
+    @pytest.fixture
+    def aes(self):
+        return AES()
+
+    @pytest.fixture
+    def ocb(self, aes):
+        return OCB(aes)
+
+    @pytest.fixture
+    def key(self):
+        return bytearray().fromhex(Keygen().get_key())
+
+    @pytest.fixture
+    def nonce(self):
+        return bytearray(range(16))
+
+    def test_set_params(self, ocb, key, nonce):
+        ocb.set_params(key, nonce)
+        assert len(ocb.nonce) == 16
+        ocb.set_nonce(nonce)
+        assert len(ocb.nonce) == 16
+        
 
 
 class Test_AES:
@@ -30,14 +55,13 @@ class Test_AES:
             aes.setKey(key)
             ciphertext = aes.encrypt(plaintext)
             assert ciphertext not in ciphers_list
-            ciphers_list.append(ciphertext) 
+            ciphers_list.append(ciphertext)
 
     def test_decipher(self, plaintext, key, aes):
         aes.setKey(key)
         ciphertext = aes.encrypt(plaintext)
         plaintext2 = aes.decrypt(ciphertext)
         assert plaintext == plaintext2
-
 
 
 class Test_KeyGen:

@@ -390,3 +390,10 @@ class AES:
         block = self._aes_invMain(block, self.expandedKey, self.nbrRounds)
         output = self._blockUnmap(block)
         return output
+
+
+def main():
+    raise NotImplementedError("Use as package")
+
+if __name__ == "__main__":
+    main()

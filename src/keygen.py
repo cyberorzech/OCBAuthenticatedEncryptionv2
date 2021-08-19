@@ -7,3 +7,9 @@ class Keygen:
 
     def get_key(cls):
         return secrets.token_hex(cls._keylen).upper()
+
+def main():
+    raise NotImplementedError("Use as package")
+
+if __name__ == "__main__":
+    main()
