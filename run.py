@@ -1,6 +1,7 @@
 from loguru import logger
 import sys
 
+from src.aes import AES
 
 LOGS_PATH = "logs/ocb.log"
 
