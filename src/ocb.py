@@ -23,6 +23,18 @@ class OCB:
         assert len(nonce) == cls.cipher_block_size
         cls.nonce = nonce
 
+    @logger.catch
+    def encrypt(cls):
+        pass
+
+    @logger.catch
+    def decrypt(cls):
+        pass
+
+    @logger.catch
+    def _get_pmac(cls):
+        pass
+
 def main():
     pass
 
