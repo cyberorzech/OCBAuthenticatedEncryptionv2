@@ -62,8 +62,43 @@ class OCB:
         return (tag, ciphertext)
 
     @logger.catch
-    def decrypt(cls):
-        pass
+    def decrypt(cls, ciphertext, header, tag):
+        if cls.cipher_block_size % 8 != 0:
+            raise ValueError("Cipher block size is not 8-multiple")
+        m = int(max(1, math.ceil(len(ciphertext) / float(cls.cipher_block_size))))
+        offset = cls.cipher.encrypt(cls.nonce)
+        checksum = bytearray(cls.cipher_block_size)
+        plaintext = bytearray()
+        for i in range(m - 1):
+            offset = times_two(offset)
+            C_i = ciphertext[(i * cls.cipher_block_size):(i * cls.cipher_block_size) + cls.cipher_block_size]
+            assert len(C_i) == cls.cipher_block_size
+            tmp = cls.cipher.decrypt(xor_block(C_i, offset))
+            M_i = xor_block(offset, tmp)
+            checksum = xor_block(checksum, M_i)
+            plaintext += M_i
+            assert len(plaintext) % cls.cipher_block_size == 0
+        offset = times_two(offset)
+        C_m = ciphertext[((m - 1) * cls.cipher_block_size):]
+        bitlength = len(C_m) * 8
+        assert bitlength <= cls.cipher_block_size * 8
+        tmp = bytearray(cls.cipher_block_size)
+        tmp[-1] = bitlength
+        pad = cls.cipher.encrypt(xor_block(tmp, offset))
+        tmp = []
+        M_m = xor_block(C_m, pad[:len(C_m)])
+        plaintext += M_m
+        tmp = M_m + pad[len(M_m):]
+        assert len(tmp) == cls.cipher_block_size
+        checksum = xor_block(tmp, checksum)
+        offset = times_three(offset)
+        full_valid_tag = cls.cipher.encrypt(xor_block(offset, checksum))
+        if len(header) > 0:
+            full_valid_tag = xor_block(full_valid_tag, cls._get_pmac(header))
+        if tag == full_valid_tag:
+            return (True, plaintext)
+        else:
+            return (False, [])
 
     @logger.catch
     def _get_pmac(cls, header):
@@ -100,7 +135,7 @@ class OCB:
         return auth
 
 def main():
-    pass
+    raise NotImplementedError("Use as package")
 
 if __name__ == "__main__":
     main()
