@@ -26,8 +26,40 @@ class OCB:
         cls.nonce = nonce
 
     @logger.catch
-    def encrypt(cls):
-        pass
+    def encrypt(cls, plaintext, header):
+        if cls.cipher_block_size == None or cls.nonce == None:
+            raise ValueError("Parameters of encryption method non initialized (ciper block size or nonce)")
+        m = int(max(1, math.ceil(len(plaintext) / float(cls.cipher_block_size))))
+        offset = cls.cipher.encrypt(cls.nonce)
+        checksum = bytearray(cls.cipher_block_size)
+        ciphertext = bytearray()
+        for i in range(m - 1):
+            offset = times_two(offset)
+            M_i = plaintext[(i * cls.cipher_block_size):(i * cls.cipher_block_size) + cls.cipher_block_size]
+            assert len(M_i) == cls.cipher_block_size
+            checksum = xor_block(checksum, M_i)
+            xoffset = cls.cipher.encrypt(xor_block(M_i, offset))
+            ciphertext += xor_block(offset, xoffset)
+            assert len(ciphertext) % cls.cipher_block_size == 0
+        M_m = plaintext[((m - 1) * cls.cipher_block_size):]
+        offset = times_two(offset)
+        bitlength = len(M_m) * 8
+        assert bitlength <= cls.cipher_block_size * 8
+        tmp = bytearray(cls.cipher_block_size)
+        tmp[-1] = bitlength
+        pad = cls.cipher.encrypt(xor_block(tmp, offset))
+        tmp = bytearray()
+        C_m = xor_block(M_m, pad[:len(M_m)])
+        ciphertext += C_m
+        tmp = M_m + pad[len(M_m):]
+        assert len(tmp) == cls.cipher_block_size
+        checksum = xor_block(tmp, checksum)
+        offset = times_three(offset)
+        tag = cls.cipher.encrypt(xor_block(checksum, offset))
+        if len(header) > 0:
+            tag = xor_block(tag, cls._get_pmac(header))
+        cls.nonce = None
+        return (tag, ciphertext)
 
     @logger.catch
     def decrypt(cls):
