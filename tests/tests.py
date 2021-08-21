@@ -1,4 +1,5 @@
 import pytest
+from src.bytes_operations import Operation
 
 from src.keygen import Keygen
 from src.aes import AES
@@ -26,7 +27,7 @@ class Test_OCB:
         assert len(ocb.nonce) == 16
         ocb.set_nonce(nonce)
         assert len(ocb.nonce) == 16
-        
+
 
 
 class Test_AES:
@@ -82,3 +83,13 @@ class Test_KeyGen:
             key = keygen.get_key()
             assert key not in key_list
             key_list.append(key)
+
+class Test_Operation:
+    @pytest.fixture
+    def obj(self):
+        return Operation()
+
+    def test_times_two(self, obj):
+        input = bytearray(b'10001100')
+        result = obj.times_two(input, 8)
+        assert result != None
