@@ -6,6 +6,7 @@ def xor_block(first_in, second_in):
         output.append(first_in[i] ^ second_in[i])
     return output
 
+
 def times_three(input, block_size):
     if len(input) != block_size:
         raise ValueError("Input must have same length as cipher's block size")
@@ -14,13 +15,13 @@ def times_three(input, block_size):
     if len(output) != block_size:
         raise ValueError("Output must have same length as cipher's block size")
     return output
-        
+
 
 def times_two(input, block_size):
     blocksize = block_size
     if len(input) != block_size:
         raise ValueError("Input must have same length as cipher's block size")
-    output =  bytearray(blocksize)
+    output = bytearray(blocksize)
     carry = input[0] >> 7
     for i in range(len(input) - 1):
         output[i] = ((input[i] << 1) | (input[i + 1] >> 7)) % 256

@@ -6,8 +6,7 @@ from src.ocb import OCB
 from src.keygen import Keygen
 
 LOGS_PATH = "logs/ocb.log"
-aes = AES()
-ocb = OCB(aes)
+ocb = OCB(AES())
 
 def encrypt_mess(plaintext, header, nonce, key):
     ocb.set_params(key, nonce)
@@ -23,7 +22,7 @@ def decrypt_mess(header, ciphertext, tag, nonce):
 def main():
     # Input data
     plaintext = bytearray(b"Testowa wiadomosc")
-    header = bytearray(b"Nadawca: ja teraz chce dodac wiecej znakow")
+    header = bytearray(b"Nadawca: Natan")
     key = bytearray().fromhex(Keygen().get_key())
     nonce = bytearray(range(16))
     # Encrypt
