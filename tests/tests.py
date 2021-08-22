@@ -1,6 +1,5 @@
 import pytest
 from src.bytes_operations import *
-
 from src.keygen import Keygen
 from src.aes import AES
 from src.ocb import OCB
