@@ -15,3 +15,353 @@ Traceback (most recent call last):
     return 2/0
 
 ZeroDivisionError: division by zero
+2021-08-22 01:05:03.423 | ERROR    | __main__:encrypt_mess:14 - An error has been caught in function 'encrypt_mess', process 'MainProcess' (70469), thread 'MainThread' (4698500608):
+Traceback (most recent call last):
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 48, in <module>
+    main()
+    └ <function main at 0x110347c10>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 30, in main
+    tag, ciphertext = encrypt_mess(plaintext, header, nonce, key)
+                      │            │          │       │      └ bytearray(b'"\x95\xdfQ\xa3\xff\xab\xc3\xbf\xe9*\xa3\xc6)F\xac')
+                      │            │          │       └ bytearray(b'\x00\x01\x02\x03\x04\x05\x06\x07\x08\t\n\x0b\x0c\r\x0e\x0f')
+                      │            │          └ bytearray(b'Nadawca: ja')
+                      │            └ bytearray(b'Testowa wiadomosc')
+                      └ <function encrypt_mess at 0x10f9224c0>
+
+> File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 14, in encrypt_mess
+    tag, ciphertext = ocb.encrypt(plaintext, header)
+                      │   │       │          └ bytearray(b'Nadawca: ja')
+                      │   │       └ bytearray(b'Testowa wiadomosc')
+                      │   └ <function OCB.encrypt at 0x11032cd30>
+                      └ <src.ocb.OCB object at 0x10f9d2f70>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/src/ocb.py", line 37, in encrypt
+    offset = times_two(offset)
+             │         └ bytearray(b'\x19\xb3\x1e\x8f\x11\x9c\x90\xaf\xfd\xcck\xe2\xa3\xbe\xe5\x82')
+             └ <function times_two at 0x11032c160>
+
+TypeError: times_two() missing 1 required positional argument: 'block_size'
+2021-08-22 01:05:03.431 | ERROR    | __main__:<module>:48 - An error has been caught in function '<module>', process 'MainProcess' (70469), thread 'MainThread' (4698500608):
+Traceback (most recent call last):
+
+> File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 48, in <module>
+    main()
+    └ <function main at 0x110347c10>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 30, in main
+    tag, ciphertext = encrypt_mess(plaintext, header, nonce, key)
+                      │            │          │       │      └ bytearray(b'"\x95\xdfQ\xa3\xff\xab\xc3\xbf\xe9*\xa3\xc6)F\xac')
+                      │            │          │       └ bytearray(b'\x00\x01\x02\x03\x04\x05\x06\x07\x08\t\n\x0b\x0c\r\x0e\x0f')
+                      │            │          └ bytearray(b'Nadawca: ja')
+                      │            └ bytearray(b'Testowa wiadomosc')
+                      └ <function encrypt_mess at 0x10f9224c0>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 14, in encrypt_mess
+    tag, ciphertext = ocb.encrypt(plaintext, header)
+                      │   │       │          └ bytearray(b'Nadawca: ja')
+                      │   │       └ bytearray(b'Testowa wiadomosc')
+                      │   └ <function OCB.encrypt at 0x11032cd30>
+                      └ <src.ocb.OCB object at 0x10f9d2f70>
+
+TypeError: cannot unpack non-iterable NoneType object
+2021-08-22 01:09:12.478 | ERROR    | __main__:encrypt_mess:14 - An error has been caught in function 'encrypt_mess', process 'MainProcess' (70548), thread 'MainThread' (4448665088):
+Traceback (most recent call last):
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 48, in <module>
+    main()
+    └ <function main at 0x1031bcc10>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 30, in main
+    tag, ciphertext = encrypt_mess(plaintext, header, nonce, key)
+                      │            │          │       │      └ bytearray(b'\x9d7k\xcf\xbbT8\xc9\x1cmuN\x93\xe5\x81\xa3')
+                      │            │          │       └ bytearray(b'\x00\x01\x02\x03\x04\x05\x06\x07\x08\t\n\x0b\x0c\r\x0e\x0f')
+                      │            │          └ bytearray(b'Nadawca: ja')
+                      │            └ bytearray(b'Testowa wiadomosc')
+                      └ <function encrypt_mess at 0x1027964c0>
+
+> File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 14, in encrypt_mess
+    tag, ciphertext = ocb.encrypt(plaintext, header)
+                      │   │       │          └ bytearray(b'Nadawca: ja')
+                      │   │       └ bytearray(b'Testowa wiadomosc')
+                      │   └ <function OCB.encrypt at 0x103198d30>
+                      └ <src.ocb.OCB object at 0x102846f70>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/src/ocb.py", line 63, in encrypt
+    offset = times_three(offset, cls.cipher_block_size)
+             │           │       │   └ 16
+             │           │       └ <src.ocb.OCB object at 0x102846f70>
+             │           └ bytearray(b'\xe4\nH\xd4!N\x8f\xac\xd4H\x7f\r\xfdv\xa8J')
+             └ <function times_three at 0x1031980d0>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/src/bytes_operations.py", line 12, in times_three
+    output = times_two(input, 8)
+             │         └ bytearray(b'\xe4\nH\xd4!N\x8f\xac\xd4H\x7f\r\xfdv\xa8J')
+             └ <function times_two at 0x103198160>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/src/bytes_operations.py", line 19, in times_two
+    raise ValueError("Input must have same size as block size")
+
+ValueError: Input must have same size as block size
+2021-08-22 01:09:12.498 | ERROR    | __main__:<module>:48 - An error has been caught in function '<module>', process 'MainProcess' (70548), thread 'MainThread' (4448665088):
+Traceback (most recent call last):
+
+> File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 48, in <module>
+    main()
+    └ <function main at 0x1031bcc10>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 30, in main
+    tag, ciphertext = encrypt_mess(plaintext, header, nonce, key)
+                      │            │          │       │      └ bytearray(b'\x9d7k\xcf\xbbT8\xc9\x1cmuN\x93\xe5\x81\xa3')
+                      │            │          │       └ bytearray(b'\x00\x01\x02\x03\x04\x05\x06\x07\x08\t\n\x0b\x0c\r\x0e\x0f')
+                      │            │          └ bytearray(b'Nadawca: ja')
+                      │            └ bytearray(b'Testowa wiadomosc')
+                      └ <function encrypt_mess at 0x1027964c0>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 14, in encrypt_mess
+    tag, ciphertext = ocb.encrypt(plaintext, header)
+                      │   │       │          └ bytearray(b'Nadawca: ja')
+                      │   │       └ bytearray(b'Testowa wiadomosc')
+                      │   └ <function OCB.encrypt at 0x103198d30>
+                      └ <src.ocb.OCB object at 0x102846f70>
+
+TypeError: cannot unpack non-iterable NoneType object
+2021-08-22 01:09:39.707 | ERROR    | __main__:encrypt_mess:14 - An error has been caught in function 'encrypt_mess', process 'MainProcess' (70596), thread 'MainThread' (4552101376):
+Traceback (most recent call last):
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 48, in <module>
+    main()
+    └ <function main at 0x104b7ec10>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 30, in main
+    tag, ciphertext = encrypt_mess(plaintext, header, nonce, key)
+                      │            │          │       │      └ bytearray(b'\xe2\xeb\xcc\xb5}\x1eg#\xd0K\xb3@\xcc\x97\x9e\x96')
+                      │            │          │       └ bytearray(b'\x00\x01\x02\x03\x04\x05\x06\x07\x08\t\n\x0b\x0c\r\x0e\x0f')
+                      │            │          └ bytearray(b'Nadawca: ja teraz chce dodac wiecej znakow')
+                      │            └ bytearray(b'Testowa wiadomosc')
+                      └ <function encrypt_mess at 0x10415c4c0>
+
+> File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 14, in encrypt_mess
+    tag, ciphertext = ocb.encrypt(plaintext, header)
+                      │   │       │          └ bytearray(b'Nadawca: ja teraz chce dodac wiecej znakow')
+                      │   │       └ bytearray(b'Testowa wiadomosc')
+                      │   └ <function OCB.encrypt at 0x104b60ca0>
+                      └ <src.ocb.OCB object at 0x10420cf70>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/src/ocb.py", line 63, in encrypt
+    offset = times_three(offset, cls.cipher_block_size)
+             │           │       │   └ 16
+             │           │       └ <src.ocb.OCB object at 0x10420cf70>
+             │           └ bytearray(b'\x80\xc7N\x1a\xdf\xc4\xaf\x96\x83\xb5}-\xd1I(\xca')
+             └ <function times_three at 0x104b60040>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/src/bytes_operations.py", line 12, in times_three
+    output = times_two(input, 8)
+             │         └ bytearray(b'\x80\xc7N\x1a\xdf\xc4\xaf\x96\x83\xb5}-\xd1I(\xca')
+             └ <function times_two at 0x104b600d0>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/src/bytes_operations.py", line 19, in times_two
+    raise ValueError("Input must have same size as block size")
+
+ValueError: Input must have same size as block size
+2021-08-22 01:09:39.716 | ERROR    | __main__:<module>:48 - An error has been caught in function '<module>', process 'MainProcess' (70596), thread 'MainThread' (4552101376):
+Traceback (most recent call last):
+
+> File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 48, in <module>
+    main()
+    └ <function main at 0x104b7ec10>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 30, in main
+    tag, ciphertext = encrypt_mess(plaintext, header, nonce, key)
+                      │            │          │       │      └ bytearray(b'\xe2\xeb\xcc\xb5}\x1eg#\xd0K\xb3@\xcc\x97\x9e\x96')
+                      │            │          │       └ bytearray(b'\x00\x01\x02\x03\x04\x05\x06\x07\x08\t\n\x0b\x0c\r\x0e\x0f')
+                      │            │          └ bytearray(b'Nadawca: ja teraz chce dodac wiecej znakow')
+                      │            └ bytearray(b'Testowa wiadomosc')
+                      └ <function encrypt_mess at 0x10415c4c0>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 14, in encrypt_mess
+    tag, ciphertext = ocb.encrypt(plaintext, header)
+                      │   │       │          └ bytearray(b'Nadawca: ja teraz chce dodac wiecej znakow')
+                      │   │       └ bytearray(b'Testowa wiadomosc')
+                      │   └ <function OCB.encrypt at 0x104b60ca0>
+                      └ <src.ocb.OCB object at 0x10420cf70>
+
+TypeError: cannot unpack non-iterable NoneType object
+2021-08-22 01:15:06.695 | ERROR    | __main__:encrypt_mess:14 - An error has been caught in function 'encrypt_mess', process 'MainProcess' (70717), thread 'MainThread' (4525350400):
+Traceback (most recent call last):
+
+  File "/usr/local/Cellar/python@3.9/3.9.5/Frameworks/Python.framework/Versions/3.9/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+           │         │     └ {'__name__': '__main__', '__doc__': None, '__package__': '', '__loader__': <_frozen_importlib_external.SourceFileLoader objec...
+           │         └ <code object <module> at 0x10cbd27c0, file "/Users/natan/.vscode/extensions/ms-python.python-2021.8.1105858891/pythonFiles/li...
+           └ <function _run_code at 0x10cc22550>
+
+  File "/usr/local/Cellar/python@3.9/3.9.5/Frameworks/Python.framework/Versions/3.9/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+         │     └ {'__name__': '__main__', '__doc__': None, '__package__': '', '__loader__': <_frozen_importlib_external.SourceFileLoader objec...
+         └ <code object <module> at 0x10cbd27c0, file "/Users/natan/.vscode/extensions/ms-python.python-2021.8.1105858891/pythonFiles/li...
+
+  File "/Users/natan/.vscode/extensions/ms-python.python-2021.8.1105858891/pythonFiles/lib/python/debugpy/__main__.py", line 45, in <module>
+    cli.main()
+    │   └ <function main at 0x10df2f4c0>
+    └ <module 'debugpy.server.cli' from '/Users/natan/.vscode/extensions/ms-python.python-2021.8.1105858891/pythonFiles/lib/python/...
+
+  File "/Users/natan/.vscode/extensions/ms-python.python-2021.8.1105858891/pythonFiles/lib/python/debugpy/../debugpy/server/cli.py", line 444, in main
+    run()
+    └ <function run_file at 0x10df2f280>
+
+  File "/Users/natan/.vscode/extensions/ms-python.python-2021.8.1105858891/pythonFiles/lib/python/debugpy/../debugpy/server/cli.py", line 285, in run_file
+    runpy.run_path(target_as_str, run_name=compat.force_str("__main__"))
+    │     │        │                       │      └ <function force_str at 0x10cce6670>
+    │     │        │                       └ <module 'debugpy.common.compat' from '/Users/natan/.vscode/extensions/ms-python.python-2021.8.1105858891/pythonFiles/lib/pyth...
+    │     │        └ '/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py'
+    │     └ <function run_path at 0x10ccd33a0>
+    └ <module 'runpy' from '/usr/local/Cellar/python@3.9/3.9.5/Frameworks/Python.framework/Versions/3.9/lib/python3.9/runpy.py'>
+
+  File "/usr/local/Cellar/python@3.9/3.9.5/Frameworks/Python.framework/Versions/3.9/lib/python3.9/runpy.py", line 268, in run_path
+    return _run_module_code(code, init_globals, run_name,
+           │                │     │             └ '__main__'
+           │                │     └ None
+           │                └ <code object <module> at 0x10df79710, file "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 1>
+           └ <function _run_module_code at 0x10ccd3040>
+
+  File "/usr/local/Cellar/python@3.9/3.9.5/Frameworks/Python.framework/Versions/3.9/lib/python3.9/runpy.py", line 97, in _run_module_code
+    _run_code(code, mod_globals, init_globals,
+    │         │     │            └ None
+    │         │     └ {'__name__': '__main__', '__doc__': None, '__package__': '', '__loader__': None, '__spec__': None, '__file__': '/Users/natan/...
+    │         └ <code object <module> at 0x10df79710, file "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 1>
+    └ <function _run_code at 0x10cc22550>
+
+  File "/usr/local/Cellar/python@3.9/3.9.5/Frameworks/Python.framework/Versions/3.9/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+         │     └ {'__name__': '__main__', '__doc__': None, '__package__': '', '__loader__': None, '__spec__': None, '__file__': '/Users/natan/...
+         └ <code object <module> at 0x10df79710, file "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 1>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 48, in <module>
+    main()
+    └ <function main at 0x10e1bd670>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 30, in main
+    tag, ciphertext = encrypt_mess(plaintext, header, nonce, key)
+                      │            │          │       │      └ bytearray(b'\x9f\x83\xccgF\xa5\xe1\x0f\xfb\x06\xf4\\\xd8\x13dg')
+                      │            │          │       └ bytearray(b'\x00\x01\x02\x03\x04\x05\x06\x07\x08\t\n\x0b\x0c\r\x0e\x0f')
+                      │            │          └ bytearray(b'Nadawca: ja teraz chce dodac wiecej znakow')
+                      │            └ bytearray(b'Testowa wiadomosc')
+                      └ <function encrypt_mess at 0x10df72820>
+
+> File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 14, in encrypt_mess
+    tag, ciphertext = ocb.encrypt(plaintext, header)
+                      │   │       │          └ bytearray(b'Nadawca: ja teraz chce dodac wiecej znakow')
+                      │   │       └ bytearray(b'Testowa wiadomosc')
+                      │   └ <function OCB.encrypt at 0x10e1a2ee0>
+                      └ <src.ocb.OCB object at 0x10df88160>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/src/ocb.py", line 63, in encrypt
+    offset = times_three(offset, cls.cipher_block_size)
+             │           │       │   └ 16
+             │           │       └ <src.ocb.OCB object at 0x10df88160>
+             │           └ bytearray(b'\x1c\xefS\xab\xeb\xb47\xed\x15\x91\xb0\x17\xd0\xc0\xfbt')
+             └ <function times_three at 0x10e1a2280>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/src/bytes_operations.py", line 12, in times_three
+    output = times_two(input, 8)
+             │         └ bytearray(b'\x1c\xefS\xab\xeb\xb47\xed\x15\x91\xb0\x17\xd0\xc0\xfbt')
+             └ <function times_two at 0x10e1a2310>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/src/bytes_operations.py", line 19, in times_two
+    raise ValueError("Input must have same size as block size")
+
+ValueError: Input must have same size as block size
+2021-08-22 01:21:11.909 | ERROR    | __main__:<module>:48 - An error has been caught in function '<module>', process 'MainProcess' (70717), thread 'MainThread' (4525350400):
+Traceback (most recent call last):
+
+  File "/usr/local/Cellar/python@3.9/3.9.5/Frameworks/Python.framework/Versions/3.9/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+           │         │     └ {'__name__': '__main__', '__doc__': None, '__package__': '', '__loader__': <_frozen_importlib_external.SourceFileLoader objec...
+           │         └ <code object <module> at 0x10cbd27c0, file "/Users/natan/.vscode/extensions/ms-python.python-2021.8.1105858891/pythonFiles/li...
+           └ <function _run_code at 0x10cc22550>
+
+  File "/usr/local/Cellar/python@3.9/3.9.5/Frameworks/Python.framework/Versions/3.9/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+         │     └ {'__name__': '__main__', '__doc__': None, '__package__': '', '__loader__': <_frozen_importlib_external.SourceFileLoader objec...
+         └ <code object <module> at 0x10cbd27c0, file "/Users/natan/.vscode/extensions/ms-python.python-2021.8.1105858891/pythonFiles/li...
+
+  File "/Users/natan/.vscode/extensions/ms-python.python-2021.8.1105858891/pythonFiles/lib/python/debugpy/__main__.py", line 45, in <module>
+    cli.main()
+    │   └ <function main at 0x10df2f4c0>
+    └ <module 'debugpy.server.cli' from '/Users/natan/.vscode/extensions/ms-python.python-2021.8.1105858891/pythonFiles/lib/python/...
+
+  File "/Users/natan/.vscode/extensions/ms-python.python-2021.8.1105858891/pythonFiles/lib/python/debugpy/../debugpy/server/cli.py", line 444, in main
+    run()
+    └ <function run_file at 0x10df2f280>
+
+  File "/Users/natan/.vscode/extensions/ms-python.python-2021.8.1105858891/pythonFiles/lib/python/debugpy/../debugpy/server/cli.py", line 285, in run_file
+    runpy.run_path(target_as_str, run_name=compat.force_str("__main__"))
+    │     │        │                       │      └ <function force_str at 0x10cce6670>
+    │     │        │                       └ <module 'debugpy.common.compat' from '/Users/natan/.vscode/extensions/ms-python.python-2021.8.1105858891/pythonFiles/lib/pyth...
+    │     │        └ '/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py'
+    │     └ <function run_path at 0x10ccd33a0>
+    └ <module 'runpy' from '/usr/local/Cellar/python@3.9/3.9.5/Frameworks/Python.framework/Versions/3.9/lib/python3.9/runpy.py'>
+
+  File "/usr/local/Cellar/python@3.9/3.9.5/Frameworks/Python.framework/Versions/3.9/lib/python3.9/runpy.py", line 268, in run_path
+    return _run_module_code(code, init_globals, run_name,
+           │                │     │             └ '__main__'
+           │                │     └ None
+           │                └ <code object <module> at 0x10df79710, file "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 1>
+           └ <function _run_module_code at 0x10ccd3040>
+
+  File "/usr/local/Cellar/python@3.9/3.9.5/Frameworks/Python.framework/Versions/3.9/lib/python3.9/runpy.py", line 97, in _run_module_code
+    _run_code(code, mod_globals, init_globals,
+    │         │     │            └ None
+    │         │     └ {'__name__': '__main__', '__doc__': None, '__package__': '', '__loader__': None, '__spec__': None, '__file__': '/Users/natan/...
+    │         └ <code object <module> at 0x10df79710, file "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 1>
+    └ <function _run_code at 0x10cc22550>
+
+  File "/usr/local/Cellar/python@3.9/3.9.5/Frameworks/Python.framework/Versions/3.9/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+         │     └ {'__name__': '__main__', '__doc__': None, '__package__': '', '__loader__': None, '__spec__': None, '__file__': '/Users/natan/...
+         └ <code object <module> at 0x10df79710, file "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 1>
+
+> File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 48, in <module>
+    main()
+    └ <function main at 0x10e1bd670>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 30, in main
+    tag, ciphertext = encrypt_mess(plaintext, header, nonce, key)
+                      │            │          │       │      └ bytearray(b'\x9f\x83\xccgF\xa5\xe1\x0f\xfb\x06\xf4\\\xd8\x13dg')
+                      │            │          │       └ bytearray(b'\x00\x01\x02\x03\x04\x05\x06\x07\x08\t\n\x0b\x0c\r\x0e\x0f')
+                      │            │          └ bytearray(b'Nadawca: ja teraz chce dodac wiecej znakow')
+                      │            └ bytearray(b'Testowa wiadomosc')
+                      └ <function encrypt_mess at 0x10df72820>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 14, in encrypt_mess
+    tag, ciphertext = ocb.encrypt(plaintext, header)
+                      │   │       │          └ bytearray(b'Nadawca: ja teraz chce dodac wiecej znakow')
+                      │   │       └ bytearray(b'Testowa wiadomosc')
+                      │   └ <function OCB.encrypt at 0x10e1a2ee0>
+                      └ <src.ocb.OCB object at 0x10df88160>
+
+TypeError: cannot unpack non-iterable NoneType object
+2021-08-22 07:31:25.952 | ERROR    | __main__:<module>:48 - An error has been caught in function '<module>', process 'MainProcess' (71364), thread 'MainThread' (4560571904):
+Traceback (most recent call last):
+
+> File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 48, in <module>
+    main()
+    └ <function main at 0x1108cec10>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 34, in main
+    raise ValueError("Message has been manipulated")
+
+ValueError: Message has been manipulated
+2021-08-22 07:50:01.987 | ERROR    | __main__:<module>:48 - An error has been caught in function '<module>', process 'MainProcess' (71734), thread 'MainThread' (4551052800):
+Traceback (most recent call last):
+
+> File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 48, in <module>
+    main()
+    └ <function main at 0x10c182c10>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 34, in main
+    raise ValueError("Message has been manipulated")
+
+ValueError: Message has been manipulated
