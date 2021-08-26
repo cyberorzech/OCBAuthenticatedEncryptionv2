@@ -365,3 +365,1533 @@ Traceback (most recent call last):
     raise ValueError("Message has been manipulated")
 
 ValueError: Message has been manipulated
+2021-08-23 06:06:25.009 | ERROR    | __main__:<module>:52 - An error has been caught in function '<module>', process 'MainProcess' (81391), thread 'MainThread' (4631137792):
+Traceback (most recent call last):
+
+> File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 52, in <module>
+    main()
+    └ <function main at 0x109e08dc0>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 24, in main
+    args = ArgParser().get_args()
+           └ <class 'src.args_parser.ArgParser'>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/src/args_parser.py", line 29, in __init__
+    parser.add_argument(
+    │      └ <function _ActionsContainer.add_argument at 0x10946ef70>
+    └ ArgumentParser(prog='run.py', usage=None, description='Ubuntu-vulns data downloader', formatter_class=<class 'argparse.HelpFo...
+
+  File "/usr/local/Cellar/python@3.9/3.9.5/Frameworks/Python.framework/Versions/3.9/lib/python3.9/argparse.py", line 1434, in add_argument
+    return self._add_action(action)
+           │    │           └ _StoreAction(option_strings=['-h', '--header'], dest='header', nargs=None, const=None, default=None, type=None, choices=None,...
+           │    └ <function ArgumentParser._add_action at 0x109470ca0>
+           └ ArgumentParser(prog='run.py', usage=None, description='Ubuntu-vulns data downloader', formatter_class=<class 'argparse.HelpFo...
+
+  File "/usr/local/Cellar/python@3.9/3.9.5/Frameworks/Python.framework/Versions/3.9/lib/python3.9/argparse.py", line 1799, in _add_action
+    self._optionals._add_action(action)
+    │    │          │           └ _StoreAction(option_strings=['-h', '--header'], dest='header', nargs=None, const=None, default=None, type=None, choices=None,...
+    │    │          └ <function _ArgumentGroup._add_action at 0x109470790>
+    │    └ <argparse._ArgumentGroup object at 0x109e05f70>
+    └ ArgumentParser(prog='run.py', usage=None, description='Ubuntu-vulns data downloader', formatter_class=<class 'argparse.HelpFo...
+
+  File "/usr/local/Cellar/python@3.9/3.9.5/Frameworks/Python.framework/Versions/3.9/lib/python3.9/argparse.py", line 1636, in _add_action
+    action = super(_ArgumentGroup, self)._add_action(action)
+                   │               │                 └ _StoreAction(option_strings=['-h', '--header'], dest='header', nargs=None, const=None, default=None, type=None, choices=None,...
+                   │               └ <argparse._ArgumentGroup object at 0x109e05f70>
+                   └ <class 'argparse._ArgumentGroup'>
+
+  File "/usr/local/Cellar/python@3.9/3.9.5/Frameworks/Python.framework/Versions/3.9/lib/python3.9/argparse.py", line 1448, in _add_action
+    self._check_conflict(action)
+    │    │               └ _StoreAction(option_strings=['-h', '--header'], dest='header', nargs=None, const=None, default=None, type=None, choices=None,...
+    │    └ <function _ActionsContainer._check_conflict at 0x109470550>
+    └ <argparse._ArgumentGroup object at 0x109e05f70>
+
+  File "/usr/local/Cellar/python@3.9/3.9.5/Frameworks/Python.framework/Versions/3.9/lib/python3.9/argparse.py", line 1585, in _check_conflict
+    conflict_handler(action, confl_optionals)
+    │                │       └ [('-h', _HelpAction(option_strings=['-h', '--help'], dest='help', nargs=0, const=None, default='==SUPPRESS==', type=None, cho...
+    │                └ _StoreAction(option_strings=['-h', '--header'], dest='header', nargs=None, const=None, default=None, type=None, choices=None,...
+    └ <bound method _ActionsContainer._handle_conflict_error of <argparse._ArgumentGroup object at 0x109e05f70>>
+
+  File "/usr/local/Cellar/python@3.9/3.9.5/Frameworks/Python.framework/Versions/3.9/lib/python3.9/argparse.py", line 1594, in _handle_conflict_error
+    raise ArgumentError(action, message % conflict_string)
+          │             │       │         └ '-h'
+          │             │       └ 'conflicting option string: %s'
+          │             └ _StoreAction(option_strings=['-h', '--header'], dest='header', nargs=None, const=None, default=None, type=None, choices=None,...
+          └ <class 'argparse.ArgumentError'>
+
+argparse.ArgumentError: argument -h/--header: conflicting option string: -h
+2021-08-23 06:27:46.997 | INFO     | __main__:main:26 - Encryption mode has been chosen
+2021-08-23 06:27:46.998 | ERROR    | __main__:<module>:59 - An error has been caught in function '<module>', process 'MainProcess' (82669), thread 'MainThread' (4512607744):
+Traceback (most recent call last):
+
+> File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 59, in <module>
+    main()
+    └ <function main at 0x10a68bf70>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 28, in main
+    raise ValueError("Encryption mode has been chosen but no plaintext was passed")
+
+ValueError: Encryption mode has been chosen but no plaintext was passed
+2021-08-23 06:27:56.132 | INFO     | __main__:main:26 - Encryption mode has been chosen
+2021-08-23 06:27:56.133 | ERROR    | __main__:<module>:59 - An error has been caught in function '<module>', process 'MainProcess' (82700), thread 'MainThread' (4326948352):
+Traceback (most recent call last):
+
+> File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 59, in <module>
+    main()
+    └ <function main at 0x102360f70>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 30, in main
+    raise ValueError("No key passed as an argument")
+
+ValueError: No key passed as an argument
+2021-08-23 06:28:12.483 | INFO     | __main__:main:26 - Encryption mode has been chosen
+2021-08-23 06:28:12.484 | ERROR    | __main__:encrypt_mess:13 - An error has been caught in function 'encrypt_mess', process 'MainProcess' (82757), thread 'MainThread' (4505570816):
+Traceback (most recent call last):
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 59, in <module>
+    main()
+    └ <function main at 0x10bff9f70>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 31, in main
+    tag, ciphertext = encrypt_mess(args.plaintext, args.header, args.nonce, args.key)
+                      │            │    │          │    │       │    │      │    └ 'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'
+                      │            │    │          │    │       │    │      └ Namespace(mode='encrypt', plaintext='test', ciphertext='', header='', nonce=range(0, 16), key='AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA...
+                      │            │    │          │    │       │    └ range(0, 16)
+                      │            │    │          │    │       └ Namespace(mode='encrypt', plaintext='test', ciphertext='', header='', nonce=range(0, 16), key='AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA...
+                      │            │    │          │    └ ''
+                      │            │    │          └ Namespace(mode='encrypt', plaintext='test', ciphertext='', header='', nonce=range(0, 16), key='AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA...
+                      │            │    └ 'test'
+                      │            └ Namespace(mode='encrypt', plaintext='test', ciphertext='', header='', nonce=range(0, 16), key='AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA...
+                      └ <function encrypt_mess at 0x10b3300d0>
+
+> File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 13, in encrypt_mess
+    ocb.set_params(key, nonce)
+    │   │          │    └ range(0, 16)
+    │   │          └ 'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'
+    │   └ <function OCB.set_params at 0x10be66940>
+    └ <src.ocb.OCB object at 0x10b47bf70>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/src/ocb.py", line 20, in set_params
+    assert len(key) == cls.cipher_key_size
+               │       │   └ 16
+               │       └ <src.ocb.OCB object at 0x10b47bf70>
+               └ 'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'
+
+AssertionError: assert len(key) == cls.cipher_key_size
+2021-08-23 06:28:12.497 | ERROR    | __main__:encrypt_mess:14 - An error has been caught in function 'encrypt_mess', process 'MainProcess' (82757), thread 'MainThread' (4505570816):
+Traceback (most recent call last):
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 59, in <module>
+    main()
+    └ <function main at 0x10bff9f70>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 31, in main
+    tag, ciphertext = encrypt_mess(args.plaintext, args.header, args.nonce, args.key)
+                      │            │    │          │    │       │    │      │    └ 'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'
+                      │            │    │          │    │       │    │      └ Namespace(mode='encrypt', plaintext='test', ciphertext='', header='', nonce=range(0, 16), key='AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA...
+                      │            │    │          │    │       │    └ range(0, 16)
+                      │            │    │          │    │       └ Namespace(mode='encrypt', plaintext='test', ciphertext='', header='', nonce=range(0, 16), key='AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA...
+                      │            │    │          │    └ ''
+                      │            │    │          └ Namespace(mode='encrypt', plaintext='test', ciphertext='', header='', nonce=range(0, 16), key='AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA...
+                      │            │    └ 'test'
+                      │            └ Namespace(mode='encrypt', plaintext='test', ciphertext='', header='', nonce=range(0, 16), key='AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA...
+                      └ <function encrypt_mess at 0x10b3300d0>
+
+> File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 14, in encrypt_mess
+    tag, ciphertext = ocb.encrypt(plaintext, header)
+                      │   │       │          └ ''
+                      │   │       └ 'test'
+                      │   └ <function OCB.encrypt at 0x10be68040>
+                      └ <src.ocb.OCB object at 0x10b47bf70>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/src/ocb.py", line 33, in encrypt
+    raise ValueError(
+
+ValueError: Parameters of encryption method non initialized (ciper block size or nonce)
+2021-08-23 06:28:12.500 | ERROR    | __main__:<module>:59 - An error has been caught in function '<module>', process 'MainProcess' (82757), thread 'MainThread' (4505570816):
+Traceback (most recent call last):
+
+> File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 59, in <module>
+    main()
+    └ <function main at 0x10bff9f70>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 31, in main
+    tag, ciphertext = encrypt_mess(args.plaintext, args.header, args.nonce, args.key)
+                      │            │    │          │    │       │    │      │    └ 'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'
+                      │            │    │          │    │       │    │      └ Namespace(mode='encrypt', plaintext='test', ciphertext='', header='', nonce=range(0, 16), key='AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA...
+                      │            │    │          │    │       │    └ range(0, 16)
+                      │            │    │          │    │       └ Namespace(mode='encrypt', plaintext='test', ciphertext='', header='', nonce=range(0, 16), key='AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA...
+                      │            │    │          │    └ ''
+                      │            │    │          └ Namespace(mode='encrypt', plaintext='test', ciphertext='', header='', nonce=range(0, 16), key='AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA...
+                      │            │    └ 'test'
+                      │            └ Namespace(mode='encrypt', plaintext='test', ciphertext='', header='', nonce=range(0, 16), key='AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA...
+                      └ <function encrypt_mess at 0x10b3300d0>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 14, in encrypt_mess
+    tag, ciphertext = ocb.encrypt(plaintext, header)
+                      │   │       │          └ ''
+                      │   │       └ 'test'
+                      │   └ <function OCB.encrypt at 0x10be68040>
+                      └ <src.ocb.OCB object at 0x10b47bf70>
+
+TypeError: cannot unpack non-iterable NoneType object
+2021-08-23 07:29:10.300 | INFO     | __main__:main:26 - Encryption mode has been chosen
+2021-08-23 07:29:10.301 | ERROR    | __main__:<module>:59 - An error has been caught in function '<module>', process 'MainProcess' (82948), thread 'MainThread' (4462145024):
+Traceback (most recent call last):
+
+> File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 59, in <module>
+    main()
+    └ <function main at 0x10aa6bf70>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 31, in main
+    tag, ciphertext = encrypt_mess(bytearray(args.plaintext, "utf-8"), bytearray(args.header, "utf-8"), bytearray(args.nonce, "utf-8"), bytearray(args.key, "utf-8"))
+                      │                      │    │                              │    │                           │    │                          │    └ 'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'
+                      │                      │    │                              │    │                           │    │                          └ Namespace(mode='encrypt', plaintext='test', ciphertext='', header='', nonce=range(0, 16), key='AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA...
+                      │                      │    │                              │    │                           │    └ range(0, 16)
+                      │                      │    │                              │    │                           └ Namespace(mode='encrypt', plaintext='test', ciphertext='', header='', nonce=range(0, 16), key='AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA...
+                      │                      │    │                              │    └ ''
+                      │                      │    │                              └ Namespace(mode='encrypt', plaintext='test', ciphertext='', header='', nonce=range(0, 16), key='AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA...
+                      │                      │    └ 'test'
+                      │                      └ Namespace(mode='encrypt', plaintext='test', ciphertext='', header='', nonce=range(0, 16), key='AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA...
+                      └ <function encrypt_mess at 0x109c870d0>
+
+TypeError: encoding without a string argument
+2021-08-23 07:30:57.532 | INFO     | __main__:main:26 - Encryption mode has been chosen
+2021-08-23 07:30:57.532 | ERROR    | __main__:encrypt_mess:13 - An error has been caught in function 'encrypt_mess', process 'MainProcess' (83015), thread 'MainThread' (4596633088):
+Traceback (most recent call last):
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 59, in <module>
+    main()
+    └ <function main at 0x10f466f70>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 31, in main
+    tag, ciphertext = encrypt_mess(bytearray(str(args.plaintext), "utf-8"), bytearray(str(args.header), "utf-8"), bytearray(str(args.nonce), "utf-8"), bytearray(str(args.key), "utf-8"))
+                      │                          │    │                                   │    │                                │    │                               │    └ 'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'
+                      │                          │    │                                   │    │                                │    │                               └ Namespace(mode='encrypt', plaintext='test', ciphertext='', header='', nonce=range(0, 16), key='AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA...
+                      │                          │    │                                   │    │                                │    └ range(0, 16)
+                      │                          │    │                                   │    │                                └ Namespace(mode='encrypt', plaintext='test', ciphertext='', header='', nonce=range(0, 16), key='AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA...
+                      │                          │    │                                   │    └ ''
+                      │                          │    │                                   └ Namespace(mode='encrypt', plaintext='test', ciphertext='', header='', nonce=range(0, 16), key='AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA...
+                      │                          │    └ 'test'
+                      │                          └ Namespace(mode='encrypt', plaintext='test', ciphertext='', header='', nonce=range(0, 16), key='AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA...
+                      └ <function encrypt_mess at 0x10e79c0d0>
+
+> File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 13, in encrypt_mess
+    ocb.set_params(key, nonce)
+    │   │          │    └ bytearray(b'range(0, 16)')
+    │   │          └ bytearray(b'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')
+    │   └ <function OCB.set_params at 0x10f2d3940>
+    └ <src.ocb.OCB object at 0x10e8e8f70>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/src/ocb.py", line 20, in set_params
+    assert len(key) == cls.cipher_key_size
+               │       │   └ 16
+               │       └ <src.ocb.OCB object at 0x10e8e8f70>
+               └ bytearray(b'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')
+
+AssertionError: assert len(key) == cls.cipher_key_size
+2021-08-23 07:30:57.543 | ERROR    | __main__:encrypt_mess:14 - An error has been caught in function 'encrypt_mess', process 'MainProcess' (83015), thread 'MainThread' (4596633088):
+Traceback (most recent call last):
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 59, in <module>
+    main()
+    └ <function main at 0x10f466f70>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 31, in main
+    tag, ciphertext = encrypt_mess(bytearray(str(args.plaintext), "utf-8"), bytearray(str(args.header), "utf-8"), bytearray(str(args.nonce), "utf-8"), bytearray(str(args.key), "utf-8"))
+                      │                          │    │                                   │    │                                │    │                               │    └ 'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'
+                      │                          │    │                                   │    │                                │    │                               └ Namespace(mode='encrypt', plaintext='test', ciphertext='', header='', nonce=range(0, 16), key='AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA...
+                      │                          │    │                                   │    │                                │    └ range(0, 16)
+                      │                          │    │                                   │    │                                └ Namespace(mode='encrypt', plaintext='test', ciphertext='', header='', nonce=range(0, 16), key='AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA...
+                      │                          │    │                                   │    └ ''
+                      │                          │    │                                   └ Namespace(mode='encrypt', plaintext='test', ciphertext='', header='', nonce=range(0, 16), key='AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA...
+                      │                          │    └ 'test'
+                      │                          └ Namespace(mode='encrypt', plaintext='test', ciphertext='', header='', nonce=range(0, 16), key='AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA...
+                      └ <function encrypt_mess at 0x10e79c0d0>
+
+> File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 14, in encrypt_mess
+    tag, ciphertext = ocb.encrypt(plaintext, header)
+                      │   │       │          └ bytearray(b'')
+                      │   │       └ bytearray(b'test')
+                      │   └ <function OCB.encrypt at 0x10f2d4040>
+                      └ <src.ocb.OCB object at 0x10e8e8f70>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/src/ocb.py", line 33, in encrypt
+    raise ValueError(
+
+ValueError: Parameters of encryption method non initialized (ciper block size or nonce)
+2021-08-23 07:30:57.548 | ERROR    | __main__:<module>:59 - An error has been caught in function '<module>', process 'MainProcess' (83015), thread 'MainThread' (4596633088):
+Traceback (most recent call last):
+
+> File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 59, in <module>
+    main()
+    └ <function main at 0x10f466f70>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 31, in main
+    tag, ciphertext = encrypt_mess(bytearray(str(args.plaintext), "utf-8"), bytearray(str(args.header), "utf-8"), bytearray(str(args.nonce), "utf-8"), bytearray(str(args.key), "utf-8"))
+                      │                          │    │                                   │    │                                │    │                               │    └ 'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'
+                      │                          │    │                                   │    │                                │    │                               └ Namespace(mode='encrypt', plaintext='test', ciphertext='', header='', nonce=range(0, 16), key='AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA...
+                      │                          │    │                                   │    │                                │    └ range(0, 16)
+                      │                          │    │                                   │    │                                └ Namespace(mode='encrypt', plaintext='test', ciphertext='', header='', nonce=range(0, 16), key='AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA...
+                      │                          │    │                                   │    └ ''
+                      │                          │    │                                   └ Namespace(mode='encrypt', plaintext='test', ciphertext='', header='', nonce=range(0, 16), key='AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA...
+                      │                          │    └ 'test'
+                      │                          └ Namespace(mode='encrypt', plaintext='test', ciphertext='', header='', nonce=range(0, 16), key='AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA...
+                      └ <function encrypt_mess at 0x10e79c0d0>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 14, in encrypt_mess
+    tag, ciphertext = ocb.encrypt(plaintext, header)
+                      │   │       │          └ bytearray(b'')
+                      │   │       └ bytearray(b'test')
+                      │   └ <function OCB.encrypt at 0x10f2d4040>
+                      └ <src.ocb.OCB object at 0x10e8e8f70>
+
+TypeError: cannot unpack non-iterable NoneType object
+2021-08-23 07:32:03.983 | INFO     | __main__:main:26 - Encryption mode has been chosen
+2021-08-23 07:32:03.984 | ERROR    | __main__:encrypt_mess:13 - An error has been caught in function 'encrypt_mess', process 'MainProcess' (83055), thread 'MainThread' (4442828288):
+Traceback (most recent call last):
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 59, in <module>
+    main()
+    └ <function main at 0x1019edf70>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 31, in main
+    tag, ciphertext = encrypt_mess(bytearray(str(args.plaintext), "utf-8"), bytearray(str(args.header), "utf-8"), bytearray(str(args.nonce), "utf-8"), bytearray(str(args.key), "utf-8"))
+                      │                          │    │                                   │    │                                │    │                               │    └ 'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'
+                      │                          │    │                                   │    │                                │    │                               └ Namespace(mode='encrypt', plaintext='test', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAAAAAAAAAAAAAAA...
+                      │                          │    │                                   │    │                                │    └ range(0, 16)
+                      │                          │    │                                   │    │                                └ Namespace(mode='encrypt', plaintext='test', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAAAAAAAAAAAAAAA...
+                      │                          │    │                                   │    └ 'natan'
+                      │                          │    │                                   └ Namespace(mode='encrypt', plaintext='test', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAAAAAAAAAAAAAAA...
+                      │                          │    └ 'test'
+                      │                          └ Namespace(mode='encrypt', plaintext='test', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAAAAAAAAAAAAAAA...
+                      └ <function encrypt_mess at 0x100d230d0>
+
+> File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 13, in encrypt_mess
+    ocb.set_params(key, nonce)
+    │   │          │    └ bytearray(b'range(0, 16)')
+    │   │          └ bytearray(b'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')
+    │   └ <function OCB.set_params at 0x10185a940>
+    └ <src.ocb.OCB object at 0x100e6ff70>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/src/ocb.py", line 20, in set_params
+    assert len(key) == cls.cipher_key_size
+               │       │   └ 16
+               │       └ <src.ocb.OCB object at 0x100e6ff70>
+               └ bytearray(b'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')
+
+AssertionError: assert len(key) == cls.cipher_key_size
+2021-08-23 07:32:03.996 | ERROR    | __main__:encrypt_mess:14 - An error has been caught in function 'encrypt_mess', process 'MainProcess' (83055), thread 'MainThread' (4442828288):
+Traceback (most recent call last):
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 59, in <module>
+    main()
+    └ <function main at 0x1019edf70>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 31, in main
+    tag, ciphertext = encrypt_mess(bytearray(str(args.plaintext), "utf-8"), bytearray(str(args.header), "utf-8"), bytearray(str(args.nonce), "utf-8"), bytearray(str(args.key), "utf-8"))
+                      │                          │    │                                   │    │                                │    │                               │    └ 'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'
+                      │                          │    │                                   │    │                                │    │                               └ Namespace(mode='encrypt', plaintext='test', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAAAAAAAAAAAAAAA...
+                      │                          │    │                                   │    │                                │    └ range(0, 16)
+                      │                          │    │                                   │    │                                └ Namespace(mode='encrypt', plaintext='test', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAAAAAAAAAAAAAAA...
+                      │                          │    │                                   │    └ 'natan'
+                      │                          │    │                                   └ Namespace(mode='encrypt', plaintext='test', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAAAAAAAAAAAAAAA...
+                      │                          │    └ 'test'
+                      │                          └ Namespace(mode='encrypt', plaintext='test', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAAAAAAAAAAAAAAA...
+                      └ <function encrypt_mess at 0x100d230d0>
+
+> File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 14, in encrypt_mess
+    tag, ciphertext = ocb.encrypt(plaintext, header)
+                      │   │       │          └ bytearray(b'natan')
+                      │   │       └ bytearray(b'test')
+                      │   └ <function OCB.encrypt at 0x10185d040>
+                      └ <src.ocb.OCB object at 0x100e6ff70>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/src/ocb.py", line 33, in encrypt
+    raise ValueError(
+
+ValueError: Parameters of encryption method non initialized (ciper block size or nonce)
+2021-08-23 07:32:04.000 | ERROR    | __main__:<module>:59 - An error has been caught in function '<module>', process 'MainProcess' (83055), thread 'MainThread' (4442828288):
+Traceback (most recent call last):
+
+> File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 59, in <module>
+    main()
+    └ <function main at 0x1019edf70>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 31, in main
+    tag, ciphertext = encrypt_mess(bytearray(str(args.plaintext), "utf-8"), bytearray(str(args.header), "utf-8"), bytearray(str(args.nonce), "utf-8"), bytearray(str(args.key), "utf-8"))
+                      │                          │    │                                   │    │                                │    │                               │    └ 'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'
+                      │                          │    │                                   │    │                                │    │                               └ Namespace(mode='encrypt', plaintext='test', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAAAAAAAAAAAAAAA...
+                      │                          │    │                                   │    │                                │    └ range(0, 16)
+                      │                          │    │                                   │    │                                └ Namespace(mode='encrypt', plaintext='test', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAAAAAAAAAAAAAAA...
+                      │                          │    │                                   │    └ 'natan'
+                      │                          │    │                                   └ Namespace(mode='encrypt', plaintext='test', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAAAAAAAAAAAAAAA...
+                      │                          │    └ 'test'
+                      │                          └ Namespace(mode='encrypt', plaintext='test', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAAAAAAAAAAAAAAA...
+                      └ <function encrypt_mess at 0x100d230d0>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 14, in encrypt_mess
+    tag, ciphertext = ocb.encrypt(plaintext, header)
+                      │   │       │          └ bytearray(b'natan')
+                      │   │       └ bytearray(b'test')
+                      │   └ <function OCB.encrypt at 0x10185d040>
+                      └ <src.ocb.OCB object at 0x100e6ff70>
+
+TypeError: cannot unpack non-iterable NoneType object
+2021-08-23 07:37:36.961 | INFO     | __main__:main:26 - Encryption mode has been chosen
+2021-08-23 07:37:36.963 | ERROR    | __main__:encrypt_mess:13 - An error has been caught in function 'encrypt_mess', process 'MainProcess' (83202), thread 'MainThread' (4481617408):
+Traceback (most recent call last):
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 59, in <module>
+    main()
+    └ <function main at 0x10b809f70>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 31, in main
+    tag, ciphertext = encrypt_mess(bytearray(str(args.plaintext), "utf-8"), bytearray(str(args.header), "utf-8"), bytearray(str(args.nonce), "utf-8"), bytearray(str(args.key), "utf-8"))
+                      │                          │    │                                   │    │                                │    │                               │    └ 'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'
+                      │                          │    │                                   │    │                                │    │                               └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAA...
+                      │                          │    │                                   │    │                                │    └ range(0, 16)
+                      │                          │    │                                   │    │                                └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAA...
+                      │                          │    │                                   │    └ 'natan'
+                      │                          │    │                                   └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAA...
+                      │                          │    └ 'Testowa wiadomosc'
+                      │                          └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAA...
+                      └ <function encrypt_mess at 0x10aa230d0>
+
+> File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 13, in encrypt_mess
+    ocb.set_params(key, nonce)
+    │   │          │    └ bytearray(b'range(0, 16)')
+    │   │          └ bytearray(b'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')
+    │   └ <function OCB.set_params at 0x10b676940>
+    └ <src.ocb.OCB object at 0x10ab6ff70>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/src/ocb.py", line 20, in set_params
+    assert len(key) == cls.cipher_key_size
+               │       │   └ 16
+               │       └ <src.ocb.OCB object at 0x10ab6ff70>
+               └ bytearray(b'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')
+
+AssertionError: assert len(key) == cls.cipher_key_size
+2021-08-23 07:37:36.975 | ERROR    | __main__:encrypt_mess:14 - An error has been caught in function 'encrypt_mess', process 'MainProcess' (83202), thread 'MainThread' (4481617408):
+Traceback (most recent call last):
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 59, in <module>
+    main()
+    └ <function main at 0x10b809f70>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 31, in main
+    tag, ciphertext = encrypt_mess(bytearray(str(args.plaintext), "utf-8"), bytearray(str(args.header), "utf-8"), bytearray(str(args.nonce), "utf-8"), bytearray(str(args.key), "utf-8"))
+                      │                          │    │                                   │    │                                │    │                               │    └ 'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'
+                      │                          │    │                                   │    │                                │    │                               └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAA...
+                      │                          │    │                                   │    │                                │    └ range(0, 16)
+                      │                          │    │                                   │    │                                └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAA...
+                      │                          │    │                                   │    └ 'natan'
+                      │                          │    │                                   └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAA...
+                      │                          │    └ 'Testowa wiadomosc'
+                      │                          └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAA...
+                      └ <function encrypt_mess at 0x10aa230d0>
+
+> File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 14, in encrypt_mess
+    tag, ciphertext = ocb.encrypt(plaintext, header)
+                      │   │       │          └ bytearray(b'natan')
+                      │   │       └ bytearray(b'Testowa wiadomosc')
+                      │   └ <function OCB.encrypt at 0x10b678040>
+                      └ <src.ocb.OCB object at 0x10ab6ff70>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/src/ocb.py", line 33, in encrypt
+    raise ValueError(
+
+ValueError: Parameters of encryption method non initialized (ciper block size or nonce)
+2021-08-23 07:37:36.979 | ERROR    | __main__:<module>:59 - An error has been caught in function '<module>', process 'MainProcess' (83202), thread 'MainThread' (4481617408):
+Traceback (most recent call last):
+
+> File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 59, in <module>
+    main()
+    └ <function main at 0x10b809f70>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 31, in main
+    tag, ciphertext = encrypt_mess(bytearray(str(args.plaintext), "utf-8"), bytearray(str(args.header), "utf-8"), bytearray(str(args.nonce), "utf-8"), bytearray(str(args.key), "utf-8"))
+                      │                          │    │                                   │    │                                │    │                               │    └ 'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'
+                      │                          │    │                                   │    │                                │    │                               └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAA...
+                      │                          │    │                                   │    │                                │    └ range(0, 16)
+                      │                          │    │                                   │    │                                └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAA...
+                      │                          │    │                                   │    └ 'natan'
+                      │                          │    │                                   └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAA...
+                      │                          │    └ 'Testowa wiadomosc'
+                      │                          └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAA...
+                      └ <function encrypt_mess at 0x10aa230d0>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 14, in encrypt_mess
+    tag, ciphertext = ocb.encrypt(plaintext, header)
+                      │   │       │          └ bytearray(b'natan')
+                      │   │       └ bytearray(b'Testowa wiadomosc')
+                      │   └ <function OCB.encrypt at 0x10b678040>
+                      └ <src.ocb.OCB object at 0x10ab6ff70>
+
+TypeError: cannot unpack non-iterable NoneType object
+2021-08-23 07:43:52.961 | INFO     | __main__:main:26 - Encryption mode has been chosen
+2021-08-23 07:43:52.962 | ERROR    | __main__:encrypt_mess:13 - An error has been caught in function 'encrypt_mess', process 'MainProcess' (83354), thread 'MainThread' (4558122496):
+Traceback (most recent call last):
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 59, in <module>
+    main()
+    └ <function main at 0x10f4c5f70>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 31, in main
+    tag, ciphertext = encrypt_mess(bytearray(str(args.plaintext), "utf-8"), bytearray(str(args.header), "utf-8"), bytearray(str(args.nonce), "utf-8"), bytearray(str(args.key), "utf-8"))
+                      │                          │    │                                   │    │                                │    │                               │    └ 'AAAAAAAAAAAAAAAA'
+                      │                          │    │                                   │    │                                │    │                               └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAA...
+                      │                          │    │                                   │    │                                │    └ range(0, 16)
+                      │                          │    │                                   │    │                                └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAA...
+                      │                          │    │                                   │    └ 'natan'
+                      │                          │    │                                   └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAA...
+                      │                          │    └ 'Testowa wiadomosc'
+                      │                          └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAA...
+                      └ <function encrypt_mess at 0x10e7fb0d0>
+
+> File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 13, in encrypt_mess
+    ocb.set_params(key, nonce)
+    │   │          │    └ bytearray(b'range(0, 16)')
+    │   │          └ bytearray(b'AAAAAAAAAAAAAAAA')
+    │   └ <function OCB.set_params at 0x10f332940>
+    └ <src.ocb.OCB object at 0x10e947f70>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/src/ocb.py", line 21, in set_params
+    assert len(nonce) == cls.cipher_block_size
+               │         │   └ 16
+               │         └ <src.ocb.OCB object at 0x10e947f70>
+               └ bytearray(b'range(0, 16)')
+
+AssertionError: assert len(nonce) == cls.cipher_block_size
+2021-08-23 07:43:52.976 | ERROR    | __main__:encrypt_mess:14 - An error has been caught in function 'encrypt_mess', process 'MainProcess' (83354), thread 'MainThread' (4558122496):
+Traceback (most recent call last):
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 59, in <module>
+    main()
+    └ <function main at 0x10f4c5f70>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 31, in main
+    tag, ciphertext = encrypt_mess(bytearray(str(args.plaintext), "utf-8"), bytearray(str(args.header), "utf-8"), bytearray(str(args.nonce), "utf-8"), bytearray(str(args.key), "utf-8"))
+                      │                          │    │                                   │    │                                │    │                               │    └ 'AAAAAAAAAAAAAAAA'
+                      │                          │    │                                   │    │                                │    │                               └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAA...
+                      │                          │    │                                   │    │                                │    └ range(0, 16)
+                      │                          │    │                                   │    │                                └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAA...
+                      │                          │    │                                   │    └ 'natan'
+                      │                          │    │                                   └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAA...
+                      │                          │    └ 'Testowa wiadomosc'
+                      │                          └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAA...
+                      └ <function encrypt_mess at 0x10e7fb0d0>
+
+> File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 14, in encrypt_mess
+    tag, ciphertext = ocb.encrypt(plaintext, header)
+                      │   │       │          └ bytearray(b'natan')
+                      │   │       └ bytearray(b'Testowa wiadomosc')
+                      │   └ <function OCB.encrypt at 0x10f335040>
+                      └ <src.ocb.OCB object at 0x10e947f70>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/src/ocb.py", line 33, in encrypt
+    raise ValueError(
+
+ValueError: Parameters of encryption method non initialized (ciper block size or nonce)
+2021-08-23 07:43:52.980 | ERROR    | __main__:<module>:59 - An error has been caught in function '<module>', process 'MainProcess' (83354), thread 'MainThread' (4558122496):
+Traceback (most recent call last):
+
+> File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 59, in <module>
+    main()
+    └ <function main at 0x10f4c5f70>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 31, in main
+    tag, ciphertext = encrypt_mess(bytearray(str(args.plaintext), "utf-8"), bytearray(str(args.header), "utf-8"), bytearray(str(args.nonce), "utf-8"), bytearray(str(args.key), "utf-8"))
+                      │                          │    │                                   │    │                                │    │                               │    └ 'AAAAAAAAAAAAAAAA'
+                      │                          │    │                                   │    │                                │    │                               └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAA...
+                      │                          │    │                                   │    │                                │    └ range(0, 16)
+                      │                          │    │                                   │    │                                └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAA...
+                      │                          │    │                                   │    └ 'natan'
+                      │                          │    │                                   └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAA...
+                      │                          │    └ 'Testowa wiadomosc'
+                      │                          └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAA...
+                      └ <function encrypt_mess at 0x10e7fb0d0>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 14, in encrypt_mess
+    tag, ciphertext = ocb.encrypt(plaintext, header)
+                      │   │       │          └ bytearray(b'natan')
+                      │   │       └ bytearray(b'Testowa wiadomosc')
+                      │   └ <function OCB.encrypt at 0x10f335040>
+                      └ <src.ocb.OCB object at 0x10e947f70>
+
+TypeError: cannot unpack non-iterable NoneType object
+2021-08-23 07:43:56.380 | INFO     | __main__:main:26 - Encryption mode has been chosen
+2021-08-23 07:43:56.380 | ERROR    | __main__:encrypt_mess:13 - An error has been caught in function 'encrypt_mess', process 'MainProcess' (83376), thread 'MainThread' (4633079296):
+Traceback (most recent call last):
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 59, in <module>
+    main()
+    └ <function main at 0x10cca8f70>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 31, in main
+    tag, ciphertext = encrypt_mess(bytearray(str(args.plaintext), "utf-8"), bytearray(str(args.header), "utf-8"), bytearray(str(args.nonce), "utf-8"), bytearray(str(args.key), "utf-8"))
+                      │                          │    │                                   │    │                                │    │                               │    └ 'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'
+                      │                          │    │                                   │    │                                │    │                               └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAA...
+                      │                          │    │                                   │    │                                │    └ range(0, 16)
+                      │                          │    │                                   │    │                                └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAA...
+                      │                          │    │                                   │    └ 'natan'
+                      │                          │    │                                   └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAA...
+                      │                          │    └ 'Testowa wiadomosc'
+                      │                          └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAA...
+                      └ <function encrypt_mess at 0x10bfde0d0>
+
+> File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 13, in encrypt_mess
+    ocb.set_params(key, nonce)
+    │   │          │    └ bytearray(b'range(0, 16)')
+    │   │          └ bytearray(b'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')
+    │   └ <function OCB.set_params at 0x10cb15940>
+    └ <src.ocb.OCB object at 0x10c12af70>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/src/ocb.py", line 20, in set_params
+    assert len(key) == cls.cipher_key_size
+               │       │   └ 16
+               │       └ <src.ocb.OCB object at 0x10c12af70>
+               └ bytearray(b'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')
+
+AssertionError: assert len(key) == cls.cipher_key_size
+2021-08-23 07:43:56.390 | ERROR    | __main__:encrypt_mess:14 - An error has been caught in function 'encrypt_mess', process 'MainProcess' (83376), thread 'MainThread' (4633079296):
+Traceback (most recent call last):
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 59, in <module>
+    main()
+    └ <function main at 0x10cca8f70>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 31, in main
+    tag, ciphertext = encrypt_mess(bytearray(str(args.plaintext), "utf-8"), bytearray(str(args.header), "utf-8"), bytearray(str(args.nonce), "utf-8"), bytearray(str(args.key), "utf-8"))
+                      │                          │    │                                   │    │                                │    │                               │    └ 'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'
+                      │                          │    │                                   │    │                                │    │                               └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAA...
+                      │                          │    │                                   │    │                                │    └ range(0, 16)
+                      │                          │    │                                   │    │                                └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAA...
+                      │                          │    │                                   │    └ 'natan'
+                      │                          │    │                                   └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAA...
+                      │                          │    └ 'Testowa wiadomosc'
+                      │                          └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAA...
+                      └ <function encrypt_mess at 0x10bfde0d0>
+
+> File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 14, in encrypt_mess
+    tag, ciphertext = ocb.encrypt(plaintext, header)
+                      │   │       │          └ bytearray(b'natan')
+                      │   │       └ bytearray(b'Testowa wiadomosc')
+                      │   └ <function OCB.encrypt at 0x10cb18040>
+                      └ <src.ocb.OCB object at 0x10c12af70>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/src/ocb.py", line 33, in encrypt
+    raise ValueError(
+
+ValueError: Parameters of encryption method non initialized (ciper block size or nonce)
+2021-08-23 07:43:56.394 | ERROR    | __main__:<module>:59 - An error has been caught in function '<module>', process 'MainProcess' (83376), thread 'MainThread' (4633079296):
+Traceback (most recent call last):
+
+> File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 59, in <module>
+    main()
+    └ <function main at 0x10cca8f70>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 31, in main
+    tag, ciphertext = encrypt_mess(bytearray(str(args.plaintext), "utf-8"), bytearray(str(args.header), "utf-8"), bytearray(str(args.nonce), "utf-8"), bytearray(str(args.key), "utf-8"))
+                      │                          │    │                                   │    │                                │    │                               │    └ 'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'
+                      │                          │    │                                   │    │                                │    │                               └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAA...
+                      │                          │    │                                   │    │                                │    └ range(0, 16)
+                      │                          │    │                                   │    │                                └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAA...
+                      │                          │    │                                   │    └ 'natan'
+                      │                          │    │                                   └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAA...
+                      │                          │    └ 'Testowa wiadomosc'
+                      │                          └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAA...
+                      └ <function encrypt_mess at 0x10bfde0d0>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 14, in encrypt_mess
+    tag, ciphertext = ocb.encrypt(plaintext, header)
+                      │   │       │          └ bytearray(b'natan')
+                      │   │       └ bytearray(b'Testowa wiadomosc')
+                      │   └ <function OCB.encrypt at 0x10cb18040>
+                      └ <src.ocb.OCB object at 0x10c12af70>
+
+TypeError: cannot unpack non-iterable NoneType object
+2021-08-23 07:45:07.542 | INFO     | __main__:main:26 - Encryption mode has been chosen
+2021-08-23 07:45:07.543 | ERROR    | __main__:<module>:59 - An error has been caught in function '<module>', process 'MainProcess' (83420), thread 'MainThread' (4441398784):
+Traceback (most recent call last):
+
+> File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 59, in <module>
+    main()
+    └ <function main at 0x1026c6f70>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 31, in main
+    tag, ciphertext = encrypt_mess(bytearray(str(args.plaintext), "utf-8"), bytearray(str(args.header), "utf-8"), bytearray(args.nonce, "utf-8"), bytearray(str(args.key), "utf-8"))
+                      │                          │    │                                   │    │                            │    │                              │    └ 'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'
+                      │                          │    │                                   │    │                            │    │                              └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAA...
+                      │                          │    │                                   │    │                            │    └ range(0, 16)
+                      │                          │    │                                   │    │                            └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAA...
+                      │                          │    │                                   │    └ 'natan'
+                      │                          │    │                                   └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAA...
+                      │                          │    └ 'Testowa wiadomosc'
+                      │                          └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAA...
+                      └ <function encrypt_mess at 0x1019fc0d0>
+
+TypeError: encoding without a string argument
+2021-08-23 07:45:23.046 | INFO     | __main__:main:26 - Encryption mode has been chosen
+2021-08-23 07:45:23.047 | ERROR    | __main__:encrypt_mess:13 - An error has been caught in function 'encrypt_mess', process 'MainProcess' (83458), thread 'MainThread' (4392078848):
+Traceback (most recent call last):
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 59, in <module>
+    main()
+    └ <function main at 0x104d53f70>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 31, in main
+    tag, ciphertext = encrypt_mess(bytearray(str(args.plaintext), "utf-8"), bytearray(str(args.header), "utf-8"), bytearray(str(args.nonce), "utf-8"), bytearray(str(args.key), "utf-8"))
+                      │                          │    │                                   │    │                                │    │                               │    └ 'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'
+                      │                          │    │                                   │    │                                │    │                               └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAA...
+                      │                          │    │                                   │    │                                │    └ range(0, 16)
+                      │                          │    │                                   │    │                                └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAA...
+                      │                          │    │                                   │    └ 'natan'
+                      │                          │    │                                   └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAA...
+                      │                          │    └ 'Testowa wiadomosc'
+                      │                          └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAA...
+                      └ <function encrypt_mess at 0x10408a0d0>
+
+> File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 13, in encrypt_mess
+    ocb.set_params(key, nonce)
+    │   │          │    └ bytearray(b'range(0, 16)')
+    │   │          └ bytearray(b'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')
+    │   └ <function OCB.set_params at 0x104bc0940>
+    └ <src.ocb.OCB object at 0x1041d5f70>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/src/ocb.py", line 20, in set_params
+    assert len(key) == cls.cipher_key_size
+               │       │   └ 16
+               │       └ <src.ocb.OCB object at 0x1041d5f70>
+               └ bytearray(b'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')
+
+AssertionError: assert len(key) == cls.cipher_key_size
+2021-08-23 07:45:23.061 | ERROR    | __main__:encrypt_mess:14 - An error has been caught in function 'encrypt_mess', process 'MainProcess' (83458), thread 'MainThread' (4392078848):
+Traceback (most recent call last):
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 59, in <module>
+    main()
+    └ <function main at 0x104d53f70>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 31, in main
+    tag, ciphertext = encrypt_mess(bytearray(str(args.plaintext), "utf-8"), bytearray(str(args.header), "utf-8"), bytearray(str(args.nonce), "utf-8"), bytearray(str(args.key), "utf-8"))
+                      │                          │    │                                   │    │                                │    │                               │    └ 'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'
+                      │                          │    │                                   │    │                                │    │                               └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAA...
+                      │                          │    │                                   │    │                                │    └ range(0, 16)
+                      │                          │    │                                   │    │                                └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAA...
+                      │                          │    │                                   │    └ 'natan'
+                      │                          │    │                                   └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAA...
+                      │                          │    └ 'Testowa wiadomosc'
+                      │                          └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAA...
+                      └ <function encrypt_mess at 0x10408a0d0>
+
+> File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 14, in encrypt_mess
+    tag, ciphertext = ocb.encrypt(plaintext, header)
+                      │   │       │          └ bytearray(b'natan')
+                      │   │       └ bytearray(b'Testowa wiadomosc')
+                      │   └ <function OCB.encrypt at 0x104bc2040>
+                      └ <src.ocb.OCB object at 0x1041d5f70>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/src/ocb.py", line 33, in encrypt
+    raise ValueError(
+
+ValueError: Parameters of encryption method non initialized (ciper block size or nonce)
+2021-08-23 07:45:23.065 | ERROR    | __main__:<module>:59 - An error has been caught in function '<module>', process 'MainProcess' (83458), thread 'MainThread' (4392078848):
+Traceback (most recent call last):
+
+> File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 59, in <module>
+    main()
+    └ <function main at 0x104d53f70>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 31, in main
+    tag, ciphertext = encrypt_mess(bytearray(str(args.plaintext), "utf-8"), bytearray(str(args.header), "utf-8"), bytearray(str(args.nonce), "utf-8"), bytearray(str(args.key), "utf-8"))
+                      │                          │    │                                   │    │                                │    │                               │    └ 'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'
+                      │                          │    │                                   │    │                                │    │                               └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAA...
+                      │                          │    │                                   │    │                                │    └ range(0, 16)
+                      │                          │    │                                   │    │                                └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAA...
+                      │                          │    │                                   │    └ 'natan'
+                      │                          │    │                                   └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAA...
+                      │                          │    └ 'Testowa wiadomosc'
+                      │                          └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAA...
+                      └ <function encrypt_mess at 0x10408a0d0>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 14, in encrypt_mess
+    tag, ciphertext = ocb.encrypt(plaintext, header)
+                      │   │       │          └ bytearray(b'natan')
+                      │   │       └ bytearray(b'Testowa wiadomosc')
+                      │   └ <function OCB.encrypt at 0x104bc2040>
+                      └ <src.ocb.OCB object at 0x1041d5f70>
+
+TypeError: cannot unpack non-iterable NoneType object
+2021-08-23 07:45:42.985 | INFO     | __main__:main:26 - Encryption mode has been chosen
+2021-08-23 07:45:42.986 | ERROR    | __main__:<module>:59 - An error has been caught in function '<module>', process 'MainProcess' (83514), thread 'MainThread' (4539715072):
+Traceback (most recent call last):
+
+> File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 59, in <module>
+    main()
+    └ <function main at 0x106d59f70>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 31, in main
+    tag, ciphertext = encrypt_mess(bytearray(str(args.plaintext), "utf-8"), bytearray(str(args.header), "utf-8"), bytearray(range(16), "utf-8"), bytearray(str(args.key), "utf-8"))
+                      │                          │    │                                   │    │                                                               │    └ 'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'
+                      │                          │    │                                   │    │                                                               └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAA...
+                      │                          │    │                                   │    └ 'natan'
+                      │                          │    │                                   └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAA...
+                      │                          │    └ 'Testowa wiadomosc'
+                      │                          └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAA...
+                      └ <function encrypt_mess at 0x10608f0d0>
+
+TypeError: encoding without a string argument
+2021-08-23 07:45:57.772 | INFO     | __main__:main:26 - Encryption mode has been chosen
+2021-08-23 07:45:57.772 | ERROR    | __main__:encrypt_mess:13 - An error has been caught in function 'encrypt_mess', process 'MainProcess' (83542), thread 'MainThread' (4662234624):
+Traceback (most recent call last):
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 59, in <module>
+    main()
+    └ <function main at 0x10b4cef70>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 31, in main
+    tag, ciphertext = encrypt_mess(bytearray(str(args.plaintext), "utf-8"), bytearray(str(args.header), "utf-8"), bytearray(range(16)), bytearray(str(args.key), "utf-8"))
+                      │                          │    │                                   │    │                                                      │    └ 'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'
+                      │                          │    │                                   │    │                                                      └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAA...
+                      │                          │    │                                   │    └ 'natan'
+                      │                          │    │                                   └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAA...
+                      │                          │    └ 'Testowa wiadomosc'
+                      │                          └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAA...
+                      └ <function encrypt_mess at 0x10a8040d0>
+
+> File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 13, in encrypt_mess
+    ocb.set_params(key, nonce)
+    │   │          │    └ bytearray(b'\x00\x01\x02\x03\x04\x05\x06\x07\x08\t\n\x0b\x0c\r\x0e\x0f')
+    │   │          └ bytearray(b'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')
+    │   └ <function OCB.set_params at 0x10b33b940>
+    └ <src.ocb.OCB object at 0x10a950f70>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/src/ocb.py", line 20, in set_params
+    assert len(key) == cls.cipher_key_size
+               │       │   └ 16
+               │       └ <src.ocb.OCB object at 0x10a950f70>
+               └ bytearray(b'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')
+
+AssertionError: assert len(key) == cls.cipher_key_size
+2021-08-23 07:45:57.785 | ERROR    | __main__:encrypt_mess:14 - An error has been caught in function 'encrypt_mess', process 'MainProcess' (83542), thread 'MainThread' (4662234624):
+Traceback (most recent call last):
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 59, in <module>
+    main()
+    └ <function main at 0x10b4cef70>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 31, in main
+    tag, ciphertext = encrypt_mess(bytearray(str(args.plaintext), "utf-8"), bytearray(str(args.header), "utf-8"), bytearray(range(16)), bytearray(str(args.key), "utf-8"))
+                      │                          │    │                                   │    │                                                      │    └ 'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'
+                      │                          │    │                                   │    │                                                      └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAA...
+                      │                          │    │                                   │    └ 'natan'
+                      │                          │    │                                   └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAA...
+                      │                          │    └ 'Testowa wiadomosc'
+                      │                          └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAA...
+                      └ <function encrypt_mess at 0x10a8040d0>
+
+> File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 14, in encrypt_mess
+    tag, ciphertext = ocb.encrypt(plaintext, header)
+                      │   │       │          └ bytearray(b'natan')
+                      │   │       └ bytearray(b'Testowa wiadomosc')
+                      │   └ <function OCB.encrypt at 0x10b33e040>
+                      └ <src.ocb.OCB object at 0x10a950f70>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/src/ocb.py", line 33, in encrypt
+    raise ValueError(
+
+ValueError: Parameters of encryption method non initialized (ciper block size or nonce)
+2021-08-23 07:45:57.789 | ERROR    | __main__:<module>:59 - An error has been caught in function '<module>', process 'MainProcess' (83542), thread 'MainThread' (4662234624):
+Traceback (most recent call last):
+
+> File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 59, in <module>
+    main()
+    └ <function main at 0x10b4cef70>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 31, in main
+    tag, ciphertext = encrypt_mess(bytearray(str(args.plaintext), "utf-8"), bytearray(str(args.header), "utf-8"), bytearray(range(16)), bytearray(str(args.key), "utf-8"))
+                      │                          │    │                                   │    │                                                      │    └ 'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'
+                      │                          │    │                                   │    │                                                      └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAA...
+                      │                          │    │                                   │    └ 'natan'
+                      │                          │    │                                   └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAA...
+                      │                          │    └ 'Testowa wiadomosc'
+                      │                          └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAA...
+                      └ <function encrypt_mess at 0x10a8040d0>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 14, in encrypt_mess
+    tag, ciphertext = ocb.encrypt(plaintext, header)
+                      │   │       │          └ bytearray(b'natan')
+                      │   │       └ bytearray(b'Testowa wiadomosc')
+                      │   └ <function OCB.encrypt at 0x10b33e040>
+                      └ <src.ocb.OCB object at 0x10a950f70>
+
+TypeError: cannot unpack non-iterable NoneType object
+2021-08-23 07:46:17.257 | INFO     | __main__:main:26 - Encryption mode has been chosen
+2021-08-23 07:46:17.258 | ERROR    | __main__:<module>:59 - An error has been caught in function '<module>', process 'MainProcess' (83584), thread 'MainThread' (4539264512):
+Traceback (most recent call last):
+
+> File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 59, in <module>
+    main()
+    └ <function main at 0x109af2f70>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 31, in main
+    tag, ciphertext = encrypt_mess(bytearray(str(args.plaintext), "utf-8"), bytearray(str(args.header), "utf-8"), bytearray(range(16), "utf-8"), bytearray(str(args.key), "utf-8"))
+                      │                          │    │                                   │    │                                                               │    └ 'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'
+                      │                          │    │                                   │    │                                                               └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAA...
+                      │                          │    │                                   │    └ 'natan'
+                      │                          │    │                                   └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAA...
+                      │                          │    └ 'Testowa wiadomosc'
+                      │                          └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAA...
+                      └ <function encrypt_mess at 0x108e280d0>
+
+TypeError: encoding without a string argument
+2021-08-23 07:53:46.395 | INFO     | __main__:main:26 - Encryption mode has been chosen
+2021-08-23 07:53:46.396 | ERROR    | __main__:<module>:60 - An error has been caught in function '<module>', process 'MainProcess' (83882), thread 'MainThread' (4527607296):
+Traceback (most recent call last):
+
+> File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 60, in <module>
+    main()
+    └ <function main at 0x102cc2ee0>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 32, in main
+    tag, ciphertext = encrypt_mess(bytearray(str(args.plaintext), "utf-8"), bytearray(str(args.header), "utf-8"), bytearray(range(16), "utf-8"), bytearray().fromhex(args.key))
+                      │                          │    │                                   │    │                                                                     │    └ 'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'
+                      │                          │    │                                   │    │                                                                     └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAA...
+                      │                          │    │                                   │    └ 'natan'
+                      │                          │    │                                   └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAA...
+                      │                          │    └ 'Testowa wiadomosc'
+                      │                          └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAA...
+                      └ <function encrypt_mess at 0x101ff80d0>
+
+TypeError: encoding without a string argument
+2021-08-23 07:54:14.973 | INFO     | __main__:main:26 - Encryption mode has been chosen
+2021-08-23 07:54:14.974 | ERROR    | __main__:encrypt_mess:13 - An error has been caught in function 'encrypt_mess', process 'MainProcess' (83938), thread 'MainThread' (4429319680):
+Traceback (most recent call last):
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 60, in <module>
+    main()
+    └ <function main at 0x1014f6ee0>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 32, in main
+    tag, ciphertext = encrypt_mess(bytearray(str(args.plaintext), "utf-8"), bytearray(str(args.header), "utf-8"), bytearray(str(range(16)), "utf-8"), bytearray().fromhex(args.key))
+                      │                          │    │                                   │    │                                                                          │    └ 'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'
+                      │                          │    │                                   │    │                                                                          └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAA...
+                      │                          │    │                                   │    └ 'natan'
+                      │                          │    │                                   └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAA...
+                      │                          │    └ 'Testowa wiadomosc'
+                      │                          └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAA...
+                      └ <function encrypt_mess at 0x10082c0d0>
+
+> File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 13, in encrypt_mess
+    ocb.set_params(key, nonce)
+    │   │          │    └ bytearray(b'range(0, 16)')
+    │   │          └ bytearray(b'\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa')
+    │   └ <function OCB.set_params at 0x1013638b0>
+    └ <src.ocb.OCB object at 0x100978f70>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/src/ocb.py", line 21, in set_params
+    assert len(nonce) == cls.cipher_block_size
+               │         │   └ 16
+               │         └ <src.ocb.OCB object at 0x100978f70>
+               └ bytearray(b'range(0, 16)')
+
+AssertionError: assert len(nonce) == cls.cipher_block_size
+2021-08-23 07:54:14.987 | ERROR    | __main__:encrypt_mess:14 - An error has been caught in function 'encrypt_mess', process 'MainProcess' (83938), thread 'MainThread' (4429319680):
+Traceback (most recent call last):
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 60, in <module>
+    main()
+    └ <function main at 0x1014f6ee0>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 32, in main
+    tag, ciphertext = encrypt_mess(bytearray(str(args.plaintext), "utf-8"), bytearray(str(args.header), "utf-8"), bytearray(str(range(16)), "utf-8"), bytearray().fromhex(args.key))
+                      │                          │    │                                   │    │                                                                          │    └ 'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'
+                      │                          │    │                                   │    │                                                                          └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAA...
+                      │                          │    │                                   │    └ 'natan'
+                      │                          │    │                                   └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAA...
+                      │                          │    └ 'Testowa wiadomosc'
+                      │                          └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAA...
+                      └ <function encrypt_mess at 0x10082c0d0>
+
+> File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 14, in encrypt_mess
+    tag, ciphertext = ocb.encrypt(plaintext, header)
+                      │   │       │          └ bytearray(b'natan')
+                      │   │       └ bytearray(b'Testowa wiadomosc')
+                      │   └ <function OCB.encrypt at 0x101363f70>
+                      └ <src.ocb.OCB object at 0x100978f70>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/src/ocb.py", line 33, in encrypt
+    raise ValueError(
+
+ValueError: Parameters of encryption method non initialized (ciper block size or nonce)
+2021-08-23 07:54:14.991 | ERROR    | __main__:<module>:60 - An error has been caught in function '<module>', process 'MainProcess' (83938), thread 'MainThread' (4429319680):
+Traceback (most recent call last):
+
+> File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 60, in <module>
+    main()
+    └ <function main at 0x1014f6ee0>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 32, in main
+    tag, ciphertext = encrypt_mess(bytearray(str(args.plaintext), "utf-8"), bytearray(str(args.header), "utf-8"), bytearray(str(range(16)), "utf-8"), bytearray().fromhex(args.key))
+                      │                          │    │                                   │    │                                                                          │    └ 'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'
+                      │                          │    │                                   │    │                                                                          └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAA...
+                      │                          │    │                                   │    └ 'natan'
+                      │                          │    │                                   └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAA...
+                      │                          │    └ 'Testowa wiadomosc'
+                      │                          └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAA...
+                      └ <function encrypt_mess at 0x10082c0d0>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 14, in encrypt_mess
+    tag, ciphertext = ocb.encrypt(plaintext, header)
+                      │   │       │          └ bytearray(b'natan')
+                      │   │       └ bytearray(b'Testowa wiadomosc')
+                      │   └ <function OCB.encrypt at 0x101363f70>
+                      └ <src.ocb.OCB object at 0x100978f70>
+
+TypeError: cannot unpack non-iterable NoneType object
+2021-08-23 07:55:30.699 | INFO     | __main__:main:26 - Encryption mode has been chosen
+2021-08-23 07:55:30.713 | INFO     | __main__:main:33 - Ciphertext: bytearray(b'\x9e\x92-+\x03\x14>T&\xae\x14s\xfd\xcc1\x99\xce')
+2021-08-23 07:55:30.713 | INFO     | __main__:main:34 - Tag: bytearray(b'r\xc9\x14,Hp\xd8T\x95\xa1\xe7Z+\xdb\xca\x17')
+2021-08-25 18:13:22.665 | INFO     | __main__:main:26 - Encryption mode has been chosen
+2021-08-25 18:13:22.680 | INFO     | __main__:main:33 - Ciphertext: bytearray(b'\x9e\x92-+\x03\x14>T&\xae\x14s\xfd\xcc1\x99\xce')
+2021-08-25 18:13:22.681 | INFO     | __main__:main:34 - Tag: bytearray(b'r\xc9\x14,Hp\xd8T\x95\xa1\xe7Z+\xdb\xca\x17')
+2021-08-25 18:15:29.603 | INFO     | __main__:main:26 - Encryption mode has been chosen
+2021-08-25 18:15:29.604 | ERROR    | __main__:<module>:66 - An error has been caught in function '<module>', process 'MainProcess' (95169), thread 'MainThread' (4720131584):
+Traceback (most recent call last):
+
+> File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 66, in <module>
+    main()
+    └ <function main at 0x10b898040>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 32, in main
+    plaintext = bytearray(str(args.plaintext))
+                              │    └ 'Testowa wiadomosc'
+                              └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAA...
+
+TypeError: string argument without an encoding
+2021-08-25 18:15:44.311 | INFO     | __main__:main:26 - Encryption mode has been chosen
+2021-08-25 18:16:24.542 | INFO     | __main__:main:26 - Encryption mode has been chosen
+2021-08-25 18:16:24.557 | INFO     | __main__:main:39 - Ciphertext: bytearray(b'\x9e\x92-+\x03\x14>T&\xae\x14s\xfd\xcc1\x99\xce')
+2021-08-25 18:16:24.557 | INFO     | __main__:main:40 - Tag: bytearray(b'r\xc9\x14,Hp\xd8T\x95\xa1\xe7Z+\xdb\xca\x17')
+2021-08-25 18:16:40.596 | INFO     | __main__:main:26 - Encryption mode has been chosen
+2021-08-25 18:16:40.597 | ERROR    | __main__:encrypt_mess:13 - An error has been caught in function 'encrypt_mess', process 'MainProcess' (95282), thread 'MainThread' (4646579712):
+Traceback (most recent call last):
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 66, in <module>
+    main()
+    └ <function main at 0x10aee2ee0>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 38, in main
+    tag, ciphertext = encrypt_mess(bytearray(str(args.plaintext), "utf-8"), bytearray(str(args.header), "utf-8"), bytearray(str(range(16)), "utf-8"), bytearray().fromhex(args.key))
+                      │                          │    │                                   │    │                                                                          │    └ 'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'
+                      │                          │    │                                   │    │                                                                          └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAA...
+                      │                          │    │                                   │    └ 'natan'
+                      │                          │    │                                   └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAA...
+                      │                          │    └ 'Testowa wiadomosc'
+                      │                          └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAA...
+                      └ <function encrypt_mess at 0x10a2180d0>
+
+> File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 13, in encrypt_mess
+    ocb.set_params(key, nonce)
+    │   │          │    └ bytearray(b'range(0, 16)')
+    │   │          └ bytearray(b'\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa')
+    │   └ <function OCB.set_params at 0x10ad4f8b0>
+    └ <src.ocb.OCB object at 0x10a364f70>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/src/ocb.py", line 21, in set_params
+    assert len(nonce) == cls.cipher_block_size
+               │         │   └ 16
+               │         └ <src.ocb.OCB object at 0x10a364f70>
+               └ bytearray(b'range(0, 16)')
+
+AssertionError: assert len(nonce) == cls.cipher_block_size
+2021-08-25 18:16:40.609 | ERROR    | __main__:encrypt_mess:14 - An error has been caught in function 'encrypt_mess', process 'MainProcess' (95282), thread 'MainThread' (4646579712):
+Traceback (most recent call last):
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 66, in <module>
+    main()
+    └ <function main at 0x10aee2ee0>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 38, in main
+    tag, ciphertext = encrypt_mess(bytearray(str(args.plaintext), "utf-8"), bytearray(str(args.header), "utf-8"), bytearray(str(range(16)), "utf-8"), bytearray().fromhex(args.key))
+                      │                          │    │                                   │    │                                                                          │    └ 'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'
+                      │                          │    │                                   │    │                                                                          └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAA...
+                      │                          │    │                                   │    └ 'natan'
+                      │                          │    │                                   └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAA...
+                      │                          │    └ 'Testowa wiadomosc'
+                      │                          └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAA...
+                      └ <function encrypt_mess at 0x10a2180d0>
+
+> File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 14, in encrypt_mess
+    tag, ciphertext = ocb.encrypt(plaintext, header)
+                      │   │       │          └ bytearray(b'natan')
+                      │   │       └ bytearray(b'Testowa wiadomosc')
+                      │   └ <function OCB.encrypt at 0x10ad4ff70>
+                      └ <src.ocb.OCB object at 0x10a364f70>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/src/ocb.py", line 33, in encrypt
+    raise ValueError(
+
+ValueError: Parameters of encryption method non initialized (ciper block size or nonce)
+2021-08-25 18:16:40.613 | ERROR    | __main__:<module>:66 - An error has been caught in function '<module>', process 'MainProcess' (95282), thread 'MainThread' (4646579712):
+Traceback (most recent call last):
+
+> File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 66, in <module>
+    main()
+    └ <function main at 0x10aee2ee0>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 38, in main
+    tag, ciphertext = encrypt_mess(bytearray(str(args.plaintext), "utf-8"), bytearray(str(args.header), "utf-8"), bytearray(str(range(16)), "utf-8"), bytearray().fromhex(args.key))
+                      │                          │    │                                   │    │                                                                          │    └ 'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'
+                      │                          │    │                                   │    │                                                                          └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAA...
+                      │                          │    │                                   │    └ 'natan'
+                      │                          │    │                                   └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAA...
+                      │                          │    └ 'Testowa wiadomosc'
+                      │                          └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='AAAAAAAAAAAA...
+                      └ <function encrypt_mess at 0x10a2180d0>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 14, in encrypt_mess
+    tag, ciphertext = ocb.encrypt(plaintext, header)
+                      │   │       │          └ bytearray(b'natan')
+                      │   │       └ bytearray(b'Testowa wiadomosc')
+                      │   └ <function OCB.encrypt at 0x10ad4ff70>
+                      └ <src.ocb.OCB object at 0x10a364f70>
+
+TypeError: cannot unpack non-iterable NoneType object
+2021-08-25 18:17:36.987 | INFO     | __main__:main:26 - Encryption mode has been chosen
+2021-08-25 18:17:36.988 | ERROR    | __main__:<module>:66 - An error has been caught in function '<module>', process 'MainProcess' (95349), thread 'MainThread' (4547538432):
+Traceback (most recent call last):
+
+> File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 66, in <module>
+    main()
+    └ <function main at 0x10545fee0>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 39, in main
+    logger.info("Ciphertext: " + str(ciphertext))
+    │      └ <function Logger.info at 0x105272820>
+    └ <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink=<stderr>), (id=2, level=10, sink='logs/ocb.lo...
+
+NameError: name 'ciphertext' is not defined
+2021-08-25 18:17:50.607 | INFO     | __main__:main:26 - Encryption mode has been chosen
+2021-08-25 18:18:05.608 | INFO     | __main__:main:26 - Encryption mode has been chosen
+2021-08-25 18:18:54.277 | INFO     | __main__:main:26 - Encryption mode has been chosen
+2021-08-25 18:23:49.902 | INFO     | __main__:main:26 - Encryption mode has been chosen
+2021-08-25 18:23:49.903 | ERROR    | __main__:encrypt_mess:13 - An error has been caught in function 'encrypt_mess', process 'MainProcess' (95684), thread 'MainThread' (4648803840):
+Traceback (most recent call last):
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 72, in <module>
+    main()
+    └ <function main at 0x1076caee0>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 44, in main
+    tag, ciphertext = encrypt_mess(bytearray(str(args.plaintext), "utf-8"), bytearray(str(args.header), "utf-8"), bytearray(str(range(16)), "utf-8"), bytearray().fromhex(args.key))
+                      │                          │    │                                   │    │                                                                          │    └ '1B4C45B66B164D0DB6C62E4614038F70'
+                      │                          │    │                                   │    │                                                                          └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='1B4C45B66B16...
+                      │                          │    │                                   │    └ 'natan'
+                      │                          │    │                                   └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='1B4C45B66B16...
+                      │                          │    └ 'Testowa wiadomosc'
+                      │                          └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='1B4C45B66B16...
+                      └ <function encrypt_mess at 0x106a000d0>
+
+> File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 13, in encrypt_mess
+    ocb.set_params(key, nonce)
+    │   │          │    └ bytearray(b'range(0, 16)')
+    │   │          └ bytearray(b'\x1bLE\xb6k\x16M\r\xb6\xc6.F\x14\x03\x8fp')
+    │   └ <function OCB.set_params at 0x1075378b0>
+    └ <src.ocb.OCB object at 0x106b4cf70>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/src/ocb.py", line 21, in set_params
+    assert len(nonce) == cls.cipher_block_size
+               │         │   └ 16
+               │         └ <src.ocb.OCB object at 0x106b4cf70>
+               └ bytearray(b'range(0, 16)')
+
+AssertionError: assert len(nonce) == cls.cipher_block_size
+2021-08-25 18:23:49.915 | ERROR    | __main__:encrypt_mess:14 - An error has been caught in function 'encrypt_mess', process 'MainProcess' (95684), thread 'MainThread' (4648803840):
+Traceback (most recent call last):
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 72, in <module>
+    main()
+    └ <function main at 0x1076caee0>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 44, in main
+    tag, ciphertext = encrypt_mess(bytearray(str(args.plaintext), "utf-8"), bytearray(str(args.header), "utf-8"), bytearray(str(range(16)), "utf-8"), bytearray().fromhex(args.key))
+                      │                          │    │                                   │    │                                                                          │    └ '1B4C45B66B164D0DB6C62E4614038F70'
+                      │                          │    │                                   │    │                                                                          └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='1B4C45B66B16...
+                      │                          │    │                                   │    └ 'natan'
+                      │                          │    │                                   └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='1B4C45B66B16...
+                      │                          │    └ 'Testowa wiadomosc'
+                      │                          └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='1B4C45B66B16...
+                      └ <function encrypt_mess at 0x106a000d0>
+
+> File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 14, in encrypt_mess
+    tag, ciphertext = ocb.encrypt(plaintext, header)
+                      │   │       │          └ bytearray(b'natan')
+                      │   │       └ bytearray(b'Testowa wiadomosc')
+                      │   └ <function OCB.encrypt at 0x107537f70>
+                      └ <src.ocb.OCB object at 0x106b4cf70>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/src/ocb.py", line 33, in encrypt
+    raise ValueError(
+
+ValueError: Parameters of encryption method non initialized (ciper block size or nonce)
+2021-08-25 18:23:49.919 | ERROR    | __main__:<module>:72 - An error has been caught in function '<module>', process 'MainProcess' (95684), thread 'MainThread' (4648803840):
+Traceback (most recent call last):
+
+> File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 72, in <module>
+    main()
+    └ <function main at 0x1076caee0>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 44, in main
+    tag, ciphertext = encrypt_mess(bytearray(str(args.plaintext), "utf-8"), bytearray(str(args.header), "utf-8"), bytearray(str(range(16)), "utf-8"), bytearray().fromhex(args.key))
+                      │                          │    │                                   │    │                                                                          │    └ '1B4C45B66B164D0DB6C62E4614038F70'
+                      │                          │    │                                   │    │                                                                          └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='1B4C45B66B16...
+                      │                          │    │                                   │    └ 'natan'
+                      │                          │    │                                   └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='1B4C45B66B16...
+                      │                          │    └ 'Testowa wiadomosc'
+                      │                          └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='', header='natan', nonce=range(0, 16), key='1B4C45B66B16...
+                      └ <function encrypt_mess at 0x106a000d0>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 14, in encrypt_mess
+    tag, ciphertext = ocb.encrypt(plaintext, header)
+                      │   │       │          └ bytearray(b'natan')
+                      │   │       └ bytearray(b'Testowa wiadomosc')
+                      │   └ <function OCB.encrypt at 0x107537f70>
+                      └ <src.ocb.OCB object at 0x106b4cf70>
+
+TypeError: cannot unpack non-iterable NoneType object
+2021-08-25 18:24:43.024 | INFO     | __main__:main:26 - Encryption mode has been chosen
+2021-08-25 18:24:43.037 | INFO     | __main__:main:45 - Ciphertext: bytearray(b'\xfd\x9f\xaa\x91A\x96\xa4\xc5Y\xf5\xcf\xb5A\xc7H\x16.')
+2021-08-25 18:24:43.037 | INFO     | __main__:main:46 - Tag: bytearray(b'\xa7wY\x03\xad\x01\x98\xa6\xe0\xcc\x04\x1a|\xf2\r\xb1')
+2021-08-25 18:28:44.835 | INFO     | __main__:main:26 - Encryption mode has been chosen
+2021-08-25 18:39:44.787 | INFO     | __main__:main:27 - Encryption mode has been chosen
+2021-08-25 18:51:30.689 | INFO     | __main__:main:27 - Encryption mode has been chosen
+2021-08-25 18:51:45.531 | INFO     | __main__:main:27 - Encryption mode has been chosen
+2021-08-25 18:51:45.531 | ERROR    | __main__:<module>:62 - An error has been caught in function '<module>', process 'MainProcess' (96661), thread 'MainThread' (4443520512):
+Traceback (most recent call last):
+
+> File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 62, in <module>
+    main()
+    └ <function main at 0x109a7aee0>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 37, in main
+    args_parser.validate_args(args)
+    │           │             └ Namespace(mode='encrypt', plaintext='Testowa wiadomosc', ciphertext='¼\x94òÔ', header='natan', nonce='000102030405060708090A0...
+    │           └ <function ArgParser.validate_args at 0x108c10a60>
+    └ <src.args_parser.ArgParser object at 0x109bf1340>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/src/args_parser.py", line 81, in validate_args
+    raise ValueError("Key must be string of length 32")
+
+ValueError: Key must be string of length 32
+2021-08-25 18:51:49.440 | INFO     | __main__:main:27 - Encryption mode has been chosen
+2021-08-25 19:04:11.909 | INFO     | __main__:main:28 - Encryption mode has been chosen
+2021-08-25 19:04:11.924 | INFO     | __main__:main:30 - Ciphertext: bytearray(b'\xfd\x9f\xaa\x91A\x96\xa4\xc5Y\xf5\xcf\xb5A\xc7H\x16.')
+2021-08-25 19:04:11.924 | INFO     | __main__:main:31 - Tag: bytearray(b'\xa7wY\x03\xad\x01\x98\xa6\xe0\xcc\x04\x1a|\xf2\r\xb1')
+2021-08-25 19:09:56.085 | INFO     | __main__:main:28 - Encryption mode has been chosen
+2021-08-25 19:09:56.102 | INFO     | __main__:main:30 - Ciphertext: bytearray(b'\xfd\x9f\xaa\x91A\x96\xa4\xc5Y\xf5\xcf\xb5A\xc7H\x16.')
+2021-08-25 19:09:56.102 | INFO     | __main__:main:31 - Tag: bytearray(b'\xa7wY\x03\xad\x01\x98\xa6\xe0\xcc\x04\x1a|\xf2\r\xb1')
+2021-08-25 19:34:11.306 | INFO     | __main__:main:28 - Encryption mode has been chosen
+2021-08-25 19:34:11.320 | INFO     | __main__:main:30 - Ciphertext: bytearray(b'\xfd\x9f\xaa\x91A\x96\xa4\xc5Y\xf5\xcf\xb5A\xc7H\x16.')
+2021-08-25 19:34:11.321 | INFO     | __main__:main:31 - Tag: bytearray(b'\xa7wY\x03\xad\x01\x98\xa6\xe0\xcc\x04\x1a|\xf2\r\xb1')
+2021-08-25 19:35:39.292 | INFO     | __main__:main:33 - Decryption mode has been chosen
+2021-08-25 19:35:39.306 | INFO     | __main__:main:35 - Decrypted text: []
+2021-08-25 19:35:39.306 | INFO     | __main__:main:39 - Message has been manipulated
+2021-08-25 19:36:27.272 | INFO     | __main__:main:33 - Decryption mode has been chosen
+2021-08-25 19:36:27.288 | INFO     | __main__:main:35 - Decrypted text: []
+2021-08-25 19:36:27.289 | INFO     | __main__:main:40 - Auth: False
+2021-08-25 19:41:40.218 | INFO     | __main__:main:33 - Decryption mode has been chosen
+2021-08-25 19:41:40.237 | INFO     | __main__:main:35 - Decrypted text: []
+2021-08-25 19:41:40.238 | INFO     | __main__:main:40 - Auth: False
+2021-08-25 19:42:39.139 | INFO     | __main__:main:28 - Encryption mode has been chosen
+2021-08-25 19:42:39.154 | INFO     | __main__:main:30 - Ciphertext: bytearray(b'\xfd\x9f\xaa\x91A\x96\xa4\xc5Y\xf5\xcf\xb5A\xc7H\x16.')
+2021-08-25 19:42:39.154 | INFO     | __main__:main:31 - Tag: bytearray(b'\xa7wY\x03\xad\x01\x98\xa6\xe0\xcc\x04\x1a|\xf2\r\xb1')
+2021-08-25 19:47:56.133 | INFO     | __main__:main:33 - Decryption mode has been chosen
+2021-08-25 19:47:56.153 | INFO     | __main__:main:35 - Decrypted text: []
+2021-08-25 19:47:56.154 | INFO     | __main__:main:40 - Auth: False
+2021-08-25 19:56:50.165 | INFO     | __main__:main:28 - Encryption mode has been chosen
+2021-08-25 19:56:50.180 | INFO     | __main__:main:30 - Ciphertext: b'\xfd\x9f\xaa\x91A\x96\xa4\xc5Y\xf5\xcf\xb5A\xc7H\x16.'
+2021-08-25 19:56:50.181 | INFO     | __main__:main:31 - Tag: b'\xa7wY\x03\xad\x01\x98\xa6\xe0\xcc\x04\x1a|\xf2\r\xb1'
+2021-08-25 19:58:24.072 | INFO     | __main__:main:28 - Encryption mode has been chosen
+2021-08-25 19:58:59.285 | INFO     | __main__:main:28 - Encryption mode has been chosen
+2021-08-25 19:58:59.299 | INFO     | __main__:main:30 - Ciphertext: b'\xfd\x9f\xaa\x91A\x96\xa4\xc5Y\xf5\xcf\xb5A\xc7H\x16.'
+2021-08-25 19:58:59.299 | INFO     | __main__:main:31 - Tag: b'\xa7wY\x03\xad\x01\x98\xa6\xe0\xcc\x04\x1a|\xf2\r\xb1'
+2021-08-25 19:59:05.896 | INFO     | __main__:main:28 - Encryption mode has been chosen
+2021-08-25 19:59:05.911 | INFO     | __main__:main:30 - Ciphertext: b'\xfd\x9f\xaa\x91A\x96\xa4\xc5Y\xf5\xcf\xb5A\xc7H\x16.'
+2021-08-25 19:59:05.911 | INFO     | __main__:main:31 - Tag: b'\xa7wY\x03\xad\x01\x98\xa6\xe0\xcc\x04\x1a|\xf2\r\xb1'
+2021-08-25 20:00:39.751 | INFO     | __main__:main:33 - Decryption mode has been chosen
+2021-08-25 20:00:39.769 | INFO     | __main__:main:35 - Decrypted text: b''
+2021-08-25 20:00:39.769 | INFO     | __main__:main:40 - Auth: b''
+2021-08-25 20:01:03.549 | INFO     | __main__:main:33 - Decryption mode has been chosen
+2021-08-25 20:01:03.569 | INFO     | __main__:main:35 - Decrypted text: b''
+2021-08-25 20:01:03.570 | ERROR    | __main__:<module>:64 - An error has been caught in function '<module>', process 'MainProcess' (99412), thread 'MainThread' (4651613696):
+Traceback (most recent call last):
+
+> File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 64, in <module>
+    main()
+    └ <function main at 0x10f26ef70>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 40, in main
+    logger.info("Auth: " + type(auth))
+    │      │                    └ False
+    │      └ <function Logger.info at 0x10f0828b0>
+    └ <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink=<stderr>), (id=2, level=10, sink='logs/ocb.lo...
+
+TypeError: can only concatenate str (not "type") to str
+2021-08-25 20:01:19.101 | INFO     | __main__:main:33 - Decryption mode has been chosen
+2021-08-25 20:01:19.119 | INFO     | __main__:main:35 - Decrypted text: b''
+2021-08-25 20:01:19.119 | INFO     | __main__:main:40 - Auth: <class 'bool'>
+2021-08-25 20:01:28.504 | INFO     | __main__:main:33 - Decryption mode has been chosen
+2021-08-25 20:01:28.522 | INFO     | __main__:main:35 - Decrypted text: b''
+2021-08-25 20:01:28.523 | INFO     | __main__:main:40 - Auth: False
+2021-08-25 20:10:42.281 | INFO     | __main__:main:28 - Encryption mode has been chosen
+2021-08-25 20:10:42.296 | INFO     | __main__:main:30 - Ciphertext: b'\xfd\x9f\xaa\x91A\x96\xa4\xc5Y\xf5\xcf\xb5A\xc7H\x16.'
+2021-08-25 20:10:42.297 | INFO     | __main__:main:31 - Tag: b'\xa7wY\x03\xad\x01\x98\xa6\xe0\xcc\x04\x1a|\xf2\r\xb1'
+2021-08-25 20:10:54.933 | INFO     | __main__:main:28 - Encryption mode has been chosen
+2021-08-25 20:10:54.946 | ERROR    | __main__:<module>:64 - An error has been caught in function '<module>', process 'MainProcess' (99974), thread 'MainThread' (4739186176):
+Traceback (most recent call last):
+
+> File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 64, in <module>
+    main()
+    └ <function main at 0x10c5d0f70>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 30, in main
+    logger.info("Ciphertext: " + bytes(ciphertext))
+    │      │                           └ bytearray(b'\xfd\x9f\xaa\x91A\x96\xa4\xc5Y\xf5\xcf\xb5A\xc7H\x16.')
+    │      └ <function Logger.info at 0x10c3e48b0>
+    └ <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink=<stderr>), (id=2, level=10, sink='logs/ocb.lo...
+
+TypeError: can only concatenate str (not "bytes") to str
+2021-08-25 20:11:21.051 | INFO     | __main__:main:28 - Encryption mode has been chosen
+2021-08-25 20:11:21.066 | INFO     | __main__:main:32 - b'\xfd\x9f\xaa\x91A\x96\xa4\xc5Y\xf5\xcf\xb5A\xc7H\x16.'
+2021-08-25 20:13:27.812 | INFO     | __main__:main:28 - Encryption mode has been chosen
+2021-08-25 20:13:27.827 | ERROR    | __main__:<module>:62 - An error has been caught in function '<module>', process 'MainProcess' (247), thread 'MainThread' (4467850752):
+Traceback (most recent call last):
+
+> File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 62, in <module>
+    main()
+    └ <function main at 0x104275f70>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 32, in main
+    logger.info(bytes(ciphertext).decode())
+    │      │          └ bytearray(b'\xfd\x9f\xaa\x91A\x96\xa4\xc5Y\xf5\xcf\xb5A\xc7H\x16.')
+    │      └ <function Logger.info at 0x1040898b0>
+    └ <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=20, sink=<stderr>), (id=2, level=10, sink='logs/ocb.lo...
+
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xfd in position 0: invalid start byte
+2021-08-25 20:26:38.982 | INFO     | __main__:main:37 - Demo mode has been chosen
+2021-08-25 20:26:38.983 | INFO     | __main__:main:38 - Plaintext passed by user is: Test message
+2021-08-25 20:26:38.983 | INFO     | __main__:main:39 - Header is: 
+2021-08-25 20:26:38.991 | INFO     | __main__:main:41 - Case 1: Message was not manipulated
+2021-08-25 20:26:38.992 | INFO     | __main__:main:42 - Ciphertext: b'\x02\x0b\x98\x84[U"\xa8S\xbd\xc8\x84'
+2021-08-25 20:26:38.992 | INFO     | __main__:main:43 - Tag: b'\xb2X\x1fz\xfe\xae\xefh<u\xf0Sy\x1a\xb8\xca'
+2021-08-25 20:26:38.999 | INFO     | __main__:main:45 - Decrypted data: b''
+2021-08-25 20:26:38.999 | INFO     | __main__:main:46 - Case 2: Header was manipulated
+2021-08-25 20:26:38.999 | ERROR    | __main__:<module>:77 - An error has been caught in function '<module>', process 'MainProcess' (1133), thread 'MainThread' (4730703360):
+Traceback (most recent call last):
+
+> File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 77, in <module>
+    main()
+    └ <function main at 0x10c3e1040>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 48, in main
+    manipulated_header[2] = "o"
+    └ ''
+
+TypeError: 'str' object does not support item assignment
+2021-08-25 20:27:32.011 | INFO     | __main__:main:37 - Demo mode has been chosen
+2021-08-25 20:27:32.012 | INFO     | __main__:main:38 - Plaintext passed by user is: Test message
+2021-08-25 20:27:32.012 | INFO     | __main__:main:39 - Header is: 
+2021-08-25 20:27:32.020 | INFO     | __main__:main:41 - Case 1: Message was not manipulated
+2021-08-25 20:27:32.020 | INFO     | __main__:main:42 - Ciphertext: b'\x02\x0b\x98\x84[U"\xa8S\xbd\xc8\x84'
+2021-08-25 20:27:32.021 | INFO     | __main__:main:43 - Tag: b'\xb2X\x1fz\xfe\xae\xefh<u\xf0Sy\x1a\xb8\xca'
+2021-08-25 20:27:32.028 | INFO     | __main__:main:45 - Decrypted data: b''
+2021-08-25 20:27:32.028 | INFO     | __main__:main:46 - Case 2: Header was manipulated
+2021-08-25 20:27:32.028 | INFO     | __main__:main:48 - Manipulated header: o
+2021-08-25 20:27:32.041 | INFO     | __main__:main:50 - Ciphertext: b'\x02\x0b\x98\x84[U"\xa8S\xbd\xc8\x84'
+2021-08-25 20:27:32.054 | INFO     | __main__:main:52 - Message auth is: False
+2021-08-25 20:28:57.413 | INFO     | __main__:main:37 - Demo mode has been chosen
+2021-08-25 20:28:57.413 | INFO     | __main__:main:38 - Plaintext passed by user is: Test message
+2021-08-25 20:28:57.413 | INFO     | __main__:main:39 - Header is: 
+2021-08-25 20:28:57.420 | INFO     | __main__:main:41 - Case 1: Message was not manipulated
+2021-08-25 20:28:57.420 | INFO     | __main__:main:42 - Ciphertext: b'\x02\x0b\x98\x84[U"\xa8S\xbd\xc8\x84'
+2021-08-25 20:28:57.421 | INFO     | __main__:main:43 - Tag: b'\xb2X\x1fz\xfe\xae\xefh<u\xf0Sy\x1a\xb8\xca'
+2021-08-25 20:28:57.427 | INFO     | __main__:main:45 - Decrypted data: b''
+2021-08-25 20:28:57.427 | INFO     | __main__:main:46 - Case 2: Header was manipulated
+2021-08-25 20:28:57.428 | INFO     | __main__:main:48 - Manipulated header: o
+2021-08-25 20:28:57.440 | INFO     | __main__:main:50 - Ciphertext: b'\x02\x0b\x98\x84[U"\xa8S\xbd\xc8\x84'
+2021-08-25 20:28:57.453 | INFO     | __main__:main:52 - Message auth is: False
+2021-08-25 20:29:11.681 | INFO     | __main__:main:37 - Demo mode has been chosen
+2021-08-25 20:29:11.682 | INFO     | __main__:main:38 - Plaintext passed by user is: Testowa wiadomosc
+2021-08-25 20:29:11.682 | INFO     | __main__:main:39 - Header is: natan
+2021-08-25 20:29:11.696 | INFO     | __main__:main:41 - Case 1: Message was not manipulated
+2021-08-25 20:29:11.697 | INFO     | __main__:main:42 - Ciphertext: b'\xfd\x9f\xaa\x91A\x96\xa4\xc5Y\xf5\xcf\xb5A\xc7H\x16.'
+2021-08-25 20:29:11.697 | INFO     | __main__:main:43 - Tag: b'\xa7wY\x03\xad\x01\x98\xa6\xe0\xcc\x04\x1a|\xf2\r\xb1'
+2021-08-25 20:29:11.709 | INFO     | __main__:main:45 - Decrypted data: b''
+2021-08-25 20:29:11.710 | INFO     | __main__:main:46 - Case 2: Header was manipulated
+2021-08-25 20:29:11.710 | INFO     | __main__:main:48 - Manipulated header: natano
+2021-08-25 20:29:11.724 | INFO     | __main__:main:50 - Ciphertext: b'\xfd\x9f\xaa\x91A\x96\xa4\xc5Y\xf5\xcf\xb5A\xc7H\x16.'
+2021-08-25 20:29:11.736 | INFO     | __main__:main:52 - Message auth is: False
+2021-08-25 20:32:20.576 | INFO     | __main__:main:37 - Demo mode has been chosen
+2021-08-25 20:32:20.577 | INFO     | __main__:main:38 - Plaintext passed by user is: Testowa wiadomosc
+2021-08-25 20:32:20.578 | INFO     | __main__:main:39 - Header is: natan
+2021-08-25 20:32:20.591 | INFO     | __main__:main:42 - Case 1: Message was not manipulated
+2021-08-25 20:32:20.592 | INFO     | __main__:main:43 - Ciphertext: b'\xfd\x9f\xaa\x91A\x96\xa4\xc5Y\xf5\xcf\xb5A\xc7H\x16.'
+2021-08-25 20:32:20.592 | INFO     | __main__:main:44 - Tag: b'\xa7wY\x03\xad\x01\x98\xa6\xe0\xcc\x04\x1a|\xf2\r\xb1'
+2021-08-25 20:32:20.604 | INFO     | __main__:main:46 - Decrypted data: b''
+2021-08-25 20:32:20.605 | INFO     | __main__:main:48 - Case 2: Header was manipulated
+2021-08-25 20:32:20.605 | INFO     | __main__:main:50 - Manipulated header: natano
+2021-08-25 20:32:20.622 | INFO     | __main__:main:52 - Ciphertext: b'\xfd\x9f\xaa\x91A\x96\xa4\xc5Y\xf5\xcf\xb5A\xc7H\x16.'
+2021-08-25 20:32:20.635 | INFO     | __main__:main:54 - Message auth is: False
+2021-08-25 20:32:20.636 | INFO     | __main__:main:56 - Case 3: Ciphertext was manipulated
+2021-08-25 20:32:20.636 | ERROR    | __main__:<module>:83 - An error has been caught in function '<module>', process 'MainProcess' (1414), thread 'MainThread' (4528950784):
+Traceback (most recent call last):
+
+> File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 83, in <module>
+    main()
+    └ <function main at 0x10bc8b040>
+
+  File "/Users/natan/Desktop/OCBAuthenticatedEncryptionv2/run.py", line 58, in main
+    manipulated_ciphertext[3] = "o"
+    └ bytearray(b'\xfd\x9f\xaa\x91A\x96\xa4\xc5Y\xf5\xcf\xb5A\xc7H\x16.')
+
+TypeError: 'str' object cannot be interpreted as an integer
+2021-08-25 20:32:33.565 | INFO     | __main__:main:37 - Demo mode has been chosen
+2021-08-25 20:32:33.566 | INFO     | __main__:main:38 - Plaintext passed by user is: Testowa wiadomosc
+2021-08-25 20:32:33.566 | INFO     | __main__:main:39 - Header is: natan
+2021-08-25 20:32:33.579 | INFO     | __main__:main:42 - Case 1: Message was not manipulated
+2021-08-25 20:32:33.580 | INFO     | __main__:main:43 - Ciphertext: b'\xfd\x9f\xaa\x91A\x96\xa4\xc5Y\xf5\xcf\xb5A\xc7H\x16.'
+2021-08-25 20:32:33.580 | INFO     | __main__:main:44 - Tag: b'\xa7wY\x03\xad\x01\x98\xa6\xe0\xcc\x04\x1a|\xf2\r\xb1'
+2021-08-25 20:32:33.592 | INFO     | __main__:main:46 - Decrypted data: b''
+2021-08-25 20:32:33.592 | INFO     | __main__:main:48 - Case 2: Header was manipulated
+2021-08-25 20:32:33.593 | INFO     | __main__:main:50 - Manipulated header: natano
+2021-08-25 20:32:33.608 | INFO     | __main__:main:52 - Ciphertext: b'\xfd\x9f\xaa\x91A\x96\xa4\xc5Y\xf5\xcf\xb5A\xc7H\x16.'
+2021-08-25 20:32:33.621 | INFO     | __main__:main:54 - Message auth is: False
+2021-08-25 20:32:33.621 | INFO     | __main__:main:56 - Case 3: Ciphertext was manipulated
+2021-08-25 20:32:33.621 | INFO     | __main__:main:59 - Manipulated ciphertext: b'\xfd\x9f\xaa\x07A\x96\xa4\xc5Y\xf5\xcf\xb5A\xc7H\x16.'
+2021-08-25 20:32:49.037 | INFO     | __main__:main:37 - Demo mode has been chosen
+2021-08-25 20:32:49.037 | INFO     | __main__:main:38 - Plaintext passed by user is: Testowa wiadomosc
+2021-08-25 20:32:49.038 | INFO     | __main__:main:39 - Header is: natan
+2021-08-25 20:32:49.051 | INFO     | __main__:main:42 - Case 1: Message was not manipulated
+2021-08-25 20:32:49.052 | INFO     | __main__:main:43 - Ciphertext: b'\xfd\x9f\xaa\x91A\x96\xa4\xc5Y\xf5\xcf\xb5A\xc7H\x16.'
+2021-08-25 20:32:49.052 | INFO     | __main__:main:44 - Tag: b'\xa7wY\x03\xad\x01\x98\xa6\xe0\xcc\x04\x1a|\xf2\r\xb1'
+2021-08-25 20:32:49.063 | INFO     | __main__:main:46 - Decrypted data: b''
+2021-08-25 20:32:49.064 | INFO     | __main__:main:48 - Case 2: Header was manipulated
+2021-08-25 20:32:49.064 | INFO     | __main__:main:50 - Manipulated header: natano
+2021-08-25 20:32:49.079 | INFO     | __main__:main:52 - Ciphertext: b'\xfd\x9f\xaa\x91A\x96\xa4\xc5Y\xf5\xcf\xb5A\xc7H\x16.'
+2021-08-25 20:32:49.091 | INFO     | __main__:main:54 - Message auth is: False
+2021-08-25 20:32:49.091 | INFO     | __main__:main:56 - Case 3: Ciphertext was manipulated
+2021-08-25 20:32:49.092 | INFO     | __main__:main:59 - Manipulated ciphertext: b'\x07\x9f\xaa\x91A\x96\xa4\xc5Y\xf5\xcf\xb5A\xc7H\x16.'
+2021-08-25 20:34:24.231 | INFO     | __main__:main:37 - Demo mode has been chosen
+2021-08-25 20:34:24.233 | INFO     | __main__:main:38 - Plaintext passed by user is: Testowa wiadomosc
+2021-08-25 20:34:24.233 | INFO     | __main__:main:39 - Header is: natan
+2021-08-25 20:34:24.247 | INFO     | __main__:main:42 - Case 1: Message was not manipulated
+2021-08-25 20:34:24.248 | INFO     | __main__:main:43 - Ciphertext: b'\xfd\x9f\xaa\x91A\x96\xa4\xc5Y\xf5\xcf\xb5A\xc7H\x16.'
+2021-08-25 20:34:24.248 | INFO     | __main__:main:44 - Tag: b'\xa7wY\x03\xad\x01\x98\xa6\xe0\xcc\x04\x1a|\xf2\r\xb1'
+2021-08-25 20:34:24.260 | INFO     | __main__:main:46 - Decrypted data: b''
+2021-08-25 20:34:24.261 | INFO     | __main__:main:48 - Case 2: Header was manipulated
+2021-08-25 20:34:24.261 | INFO     | __main__:main:50 - Manipulated header: natano
+2021-08-25 20:34:24.277 | INFO     | __main__:main:52 - Ciphertext: b'\xfd\x9f\xaa\x91A\x96\xa4\xc5Y\xf5\xcf\xb5A\xc7H\x16.'
+2021-08-25 20:34:24.289 | INFO     | __main__:main:54 - Message auth is: False
+2021-08-25 20:34:24.290 | INFO     | __main__:main:56 - Case 3: Ciphertext was manipulated
+2021-08-25 20:34:24.290 | INFO     | __main__:main:59 - Manipulated ciphertext: b'\x07\x9f\xaa\x91A\x96\xa4\xc5Y\xf5\xcf\xb5A\xc7H\x16.'
+2021-08-25 20:34:24.311 | INFO     | __main__:main:61 - Message auth is: False
+2021-08-26 18:09:17.550 | INFO     | __main__:main:51 - Demo mode has been chosen
+2021-08-26 18:09:17.551 | INFO     | __main__:main:52 - Plaintext passed by user is: Testowa wiadomosc
+2021-08-26 18:09:17.551 | INFO     | __main__:main:53 - Header is: natan
+2021-08-26 18:09:17.616 | INFO     | __main__:main:61 - Case 1: Message was not manipulated
+2021-08-26 18:09:17.616 | INFO     | __main__:main:62 - Ciphertext: b'\xfd\x9f\xaa\x91A\x96\xa4\xc5Y\xf5\xcf\xb5A\xc7H\x16.'
+2021-08-26 18:09:17.619 | INFO     | __main__:main:63 - Tag: b'\xa7wY\x03\xad\x01\x98\xa6\xe0\xcc\x04\x1a|\xf2\r\xb1'
+2021-08-26 18:09:17.642 | INFO     | __main__:main:71 - Decrypted data: b''
+2021-08-26 18:09:17.643 | INFO     | __main__:main:73 - Case 2: Header was manipulated
+2021-08-26 18:09:17.643 | INFO     | __main__:main:75 - Manipulated header: natano
+2021-08-26 18:09:17.672 | INFO     | __main__:main:82 - Ciphertext: b'\xfd\x9f\xaa\x91A\x96\xa4\xc5Y\xf5\xcf\xb5A\xc7H\x16.'
+2021-08-26 18:09:17.699 | INFO     | __main__:main:90 - Message auth is: False
+2021-08-26 18:09:17.699 | INFO     | __main__:main:92 - Case 3: Ciphertext was manipulated
+2021-08-26 18:09:17.699 | INFO     | __main__:main:95 - Manipulated ciphertext: b'\x07\x9f\xaa\x91A\x96\xa4\xc5Y\xf5\xcf\xb5A\xc7H\x16.'
+2021-08-26 18:09:17.771 | INFO     | __main__:main:103 - Message auth is: False
+2021-08-26 18:09:57.398 | INFO     | __main__:main:51 - Demo mode has been chosen
+2021-08-26 18:09:57.398 | INFO     | __main__:main:52 - Plaintext passed by user is: Testowa wiadomosc
+2021-08-26 18:09:57.399 | INFO     | __main__:main:53 - Header is: natan
+2021-08-26 18:09:57.468 | INFO     | __main__:main:61 - Case 1: Message was not manipulated
+2021-08-26 18:09:57.470 | INFO     | __main__:main:62 - Ciphertext: b'\xfd\x9f\xaa\x91A\x96\xa4\xc5Y\xf5\xcf\xb5A\xc7H\x16.'
+2021-08-26 18:09:57.471 | INFO     | __main__:main:63 - Tag: b'\xa7wY\x03\xad\x01\x98\xa6\xe0\xcc\x04\x1a|\xf2\r\xb1'
+2021-08-26 18:09:57.503 | INFO     | __main__:main:71 - Decrypted data: b''
+2021-08-26 18:09:57.505 | INFO     | __main__:main:73 - Case 2: Header was manipulated
+2021-08-26 18:09:57.515 | INFO     | __main__:main:75 - Manipulated header: natano
+2021-08-26 18:09:57.569 | INFO     | __main__:main:82 - Ciphertext: b'\xfd\x9f\xaa\x91A\x96\xa4\xc5Y\xf5\xcf\xb5A\xc7H\x16.'
+2021-08-26 18:09:57.588 | INFO     | __main__:main:90 - Message auth is: False
+2021-08-26 18:09:57.588 | INFO     | __main__:main:92 - Case 3: Ciphertext was manipulated
+2021-08-26 18:09:57.589 | INFO     | __main__:main:95 - Manipulated ciphertext: b'\x07\x9f\xaa\x91A\x96\xa4\xc5Y\xf5\xcf\xb5A\xc7H\x16.'
+2021-08-26 18:09:57.618 | INFO     | __main__:main:103 - Message auth is: False
+2021-08-26 18:10:10.971 | INFO     | __main__:main:51 - Demo mode has been chosen
+2021-08-26 18:10:10.971 | INFO     | __main__:main:52 - Plaintext passed by user is: Testowa wiadomosc
+2021-08-26 18:10:10.971 | INFO     | __main__:main:53 - Header is: natan
+2021-08-26 18:10:10.987 | INFO     | __main__:main:61 - Case 1: Message was not manipulated
+2021-08-26 18:10:10.988 | INFO     | __main__:main:62 - Ciphertext: b'\xfd\x9f\xaa\x91A\x96\xa4\xc5Y\xf5\xcf\xb5A\xc7H\x16.'
+2021-08-26 18:10:10.988 | INFO     | __main__:main:63 - Tag: b'\xa7wY\x03\xad\x01\x98\xa6\xe0\xcc\x04\x1a|\xf2\r\xb1'
+2021-08-26 18:10:11.002 | INFO     | __main__:main:71 - Decrypted data: b''
+2021-08-26 18:10:11.003 | INFO     | __main__:main:73 - Case 2: Header was manipulated
+2021-08-26 18:10:11.003 | INFO     | __main__:main:75 - Manipulated header: natano
+2021-08-26 18:10:11.021 | INFO     | __main__:main:82 - Ciphertext: b'\xfd\x9f\xaa\x91A\x96\xa4\xc5Y\xf5\xcf\xb5A\xc7H\x16.'
+2021-08-26 18:10:11.036 | INFO     | __main__:main:90 - Message auth is: False
+2021-08-26 18:10:11.036 | INFO     | __main__:main:92 - Case 3: Ciphertext was manipulated
+2021-08-26 18:10:11.037 | INFO     | __main__:main:95 - Manipulated ciphertext: b'\x07\x9f\xaa\x91A\x96\xa4\xc5Y\xf5\xcf\xb5A\xc7H\x16.'
+2021-08-26 18:10:11.068 | INFO     | __main__:main:103 - Message auth is: False
+2021-08-26 18:28:04.549 | INFO     | __main__:main:51 - Demo mode has been chosen
+2021-08-26 18:28:04.550 | INFO     | __main__:main:52 - Plaintext passed by user is: Testowa wiadomosc
+2021-08-26 18:28:04.551 | INFO     | __main__:main:53 - Header is: natan
+2021-08-26 18:28:04.569 | INFO     | __main__:main:61 - Case 1: Message was not manipulated
+2021-08-26 18:28:04.570 | INFO     | __main__:main:62 - Ciphertext: b'\xfd\x9f\xaa\x91A\x96\xa4\xc5Y\xf5\xcf\xb5A\xc7H\x16.'
+2021-08-26 18:28:04.570 | INFO     | __main__:main:63 - Tag: b'\xa7wY\x03\xad\x01\x98\xa6\xe0\xcc\x04\x1a|\xf2\r\xb1'
+2021-08-26 18:28:04.586 | INFO     | __main__:main:71 - Decrypted data: b''
+2021-08-26 18:28:04.586 | INFO     | __main__:main:73 - Case 2: Header was manipulated
+2021-08-26 18:28:04.586 | INFO     | __main__:main:75 - Manipulated header: natano
+2021-08-26 18:28:04.629 | INFO     | __main__:main:82 - Ciphertext: b'\xfd\x9f\xaa\x91A\x96\xa4\xc5Y\xf5\xcf\xb5A\xc7H\x16.'
+2021-08-26 18:28:04.651 | INFO     | __main__:main:90 - Message auth is: False
+2021-08-26 18:28:04.651 | INFO     | __main__:main:92 - Case 3: Ciphertext was manipulated
+2021-08-26 18:28:04.652 | INFO     | __main__:main:95 - Manipulated ciphertext: b'\x07\x9f\xaa\x91A\x96\xa4\xc5Y\xf5\xcf\xb5A\xc7H\x16.'
+2021-08-26 18:28:04.682 | INFO     | __main__:main:103 - Message auth is: False
+2021-08-26 18:30:37.237 | INFO     | __main__:main:51 - Demo mode has been chosen
+2021-08-26 18:30:37.238 | INFO     | __main__:main:52 - Plaintext passed by user is: Testowa wiadomosc
+2021-08-26 18:30:37.238 | INFO     | __main__:main:53 - Header is: natan
+2021-08-26 18:30:37.251 | INFO     | __main__:main:61 - Case 1: Message was not manipulated
+2021-08-26 18:30:37.251 | INFO     | __main__:main:62 - Ciphertext: b'\xfd\x9f\xaa\x91A\x96\xa4\xc5Y\xf5\xcf\xb5A\xc7H\x16.'
+2021-08-26 18:30:37.252 | INFO     | __main__:main:63 - Tag: b'\xa7wY\x03\xad\x01\x98\xa6\xe0\xcc\x04\x1a|\xf2\r\xb1'
+2021-08-26 18:30:37.266 | INFO     | __main__:main:71 - Decrypted data: b''
+2021-08-26 18:30:37.266 | INFO     | __main__:main:73 - Case 2: Header was manipulated
+2021-08-26 18:30:37.266 | INFO     | __main__:main:75 - Manipulated header: natano
+2021-08-26 18:30:37.284 | INFO     | __main__:main:82 - Ciphertext: b'\xfd\x9f\xaa\x91A\x96\xa4\xc5Y\xf5\xcf\xb5A\xc7H\x16.'
+2021-08-26 18:30:37.308 | INFO     | __main__:main:90 - Message auth is: False
+2021-08-26 18:30:37.309 | INFO     | __main__:main:92 - Case 3: Ciphertext was manipulated
+2021-08-26 18:30:37.309 | INFO     | __main__:main:95 - Manipulated ciphertext: b'\x07\x9f\xaa\x91A\x96\xa4\xc5Y\xf5\xcf\xb5A\xc7H\x16.'
+2021-08-26 18:30:37.336 | INFO     | __main__:main:103 - Message auth is: False
+2021-08-26 18:30:59.827 | INFO     | __main__:main:51 - Demo mode has been chosen
+2021-08-26 18:30:59.828 | INFO     | __main__:main:52 - Plaintext passed by user is: Testowa wiadomosc
+2021-08-26 18:30:59.828 | INFO     | __main__:main:53 - Header is: natan
+2021-08-26 18:30:59.847 | INFO     | __main__:main:61 - Case 1: Message was not manipulated
+2021-08-26 18:30:59.847 | INFO     | __main__:main:62 - Ciphertext: b'\xfd\x9f\xaa\x91A\x96\xa4\xc5Y\xf5\xcf\xb5A\xc7H\x16.'
+2021-08-26 18:30:59.848 | INFO     | __main__:main:63 - Tag: b'\xa7wY\x03\xad\x01\x98\xa6\xe0\xcc\x04\x1a|\xf2\r\xb1'
+2021-08-26 18:30:59.862 | INFO     | __main__:main:71 - Decrypted data: b''
+2021-08-26 18:30:59.862 | INFO     | __main__:main:73 - Case 2: Header was manipulated
+2021-08-26 18:30:59.863 | INFO     | __main__:main:75 - Manipulated header: natano
+2021-08-26 18:30:59.882 | INFO     | __main__:main:82 - Ciphertext: b'\xfd\x9f\xaa\x91A\x96\xa4\xc5Y\xf5\xcf\xb5A\xc7H\x16.'
+2021-08-26 18:30:59.898 | INFO     | __main__:main:90 - Message auth is: False
+2021-08-26 18:30:59.898 | INFO     | __main__:main:92 - Case 3: Ciphertext was manipulated
+2021-08-26 18:30:59.898 | INFO     | __main__:main:95 - Manipulated ciphertext: b'\x07\x9f\xaa\x91A\x96\xa4\xc5Y\xf5\xcf\xb5A\xc7H\x16.'
+2021-08-26 18:30:59.923 | INFO     | __main__:main:103 - Message auth is: False
+2021-08-26 18:54:01.271 | INFO     | __main__:main:51 - Demo mode has been chosen
+2021-08-26 18:54:01.272 | INFO     | __main__:main:52 - Plaintext passed by user is: Test message
+2021-08-26 18:54:01.272 | INFO     | __main__:main:53 - Header is: 
+2021-08-26 18:54:01.280 | INFO     | __main__:main:61 - Case 1: Message was not manipulated
+2021-08-26 18:54:01.281 | INFO     | __main__:main:62 - Ciphertext: b'\x02\x0b\x98\x84[U"\xa8S\xbd\xc8\x84'
+2021-08-26 18:54:01.281 | INFO     | __main__:main:63 - Tag: b'\xb2X\x1fz\xfe\xae\xefh<u\xf0Sy\x1a\xb8\xca'
+2021-08-26 18:54:01.292 | INFO     | __main__:main:71 - Decrypted data: b''
+2021-08-26 18:54:01.292 | INFO     | __main__:main:73 - Case 2: Header was manipulated
+2021-08-26 18:54:01.293 | INFO     | __main__:main:75 - Manipulated header: o
+2021-08-26 18:54:01.314 | INFO     | __main__:main:82 - Ciphertext: b'\x02\x0b\x98\x84[U"\xa8S\xbd\xc8\x84'
+2021-08-26 18:54:01.329 | INFO     | __main__:main:90 - Message auth is: False
+2021-08-26 18:54:01.330 | INFO     | __main__:main:92 - Case 3: Ciphertext was manipulated
+2021-08-26 18:54:01.330 | INFO     | __main__:main:95 - Manipulated ciphertext: b'\x07\x0b\x98\x84[U"\xa8S\xbd\xc8\x84'
+2021-08-26 18:54:01.353 | INFO     | __main__:main:103 - Message auth is: False

@@ -1,5 +1,6 @@
 from loguru import logger
 import math
+from tqdm import tqdm
 
 from src.bytes_operations import *
 
@@ -36,6 +37,7 @@ class OCB:
         offset = cls.cipher.encrypt(cls.nonce)
         checksum = bytearray(cls.cipher_block_size)
         ciphertext = bytearray()
+
         for i in range(m - 1):
             offset = times_two(offset, cls.cipher_block_size)
             M_i = plaintext[
